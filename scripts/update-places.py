@@ -139,10 +139,15 @@ def main():
     if not candidates:
         raise ValueError('No matching attractions. Existing public data was preserved.')
     selection = json.loads((ROOT / 'scripts' / 'place-selection.json').read_text(encoding='utf-8'))
+    previous_path = ROOT / 'places-data.json'
+    previous = json.loads(previous_path.read_text(encoding='utf-8')) if previous_path.exists() else {'places': []}
+    walking_by_id = {p['id']: p.get('walkInfo') for p in previous['places']}
     by_id = {p['id']: p for p in candidates}
     if any(identifier not in by_id for identifier in selection['ids']):
         raise ValueError('A selected attraction is missing or changed. Review the selection; existing snapshot preserved.')
     selected = [by_id[identifier] for identifier in selection['ids']]
+    for place in selected:
+        place['walkInfo'] = walking_by_id.get(place['id']) or {field: None for field in ('durationMinutes', 'difficulty', 'slope', 'toilet', 'bench', 'transit', 'route', 'sourceUrl', 'checkedAt')}
     snapshot = {'source': '제주관광공사 비짓제주 OPEN API', 'sourceUrl': 'https://www.visitjeju.net/kr/visitjejuapi', 'fetchedAt': datetime.now(timezone(timedelta(hours=9))).isoformat(timespec='seconds'), 'totalFetched': len(records), 'candidateCount': len(candidates), 'selection': selection['note'], 'notice': '실제 장소 정보이며 추천 순위나 보행 경로가 아닙니다. 운영시간·입장료·난이도·시설 현황은 방문 전 원문과 운영처에 확인해 주세요. 사진이 없는 장소는 일러스트를 표시합니다.', 'places': selected}
     save_snapshot(snapshot, key)
     print(json.dumps({'calls': calls, 'fetched': len(records), 'candidates': len(candidates), 'published': len(selected), 'output': 'places-data.json'}, ensure_ascii=False))
