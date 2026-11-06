@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const output = path.join(root, 'dist');
-const files = ['index.html', 'styles.css', 'app.js', 'sample-data.json', 'assets/jeju-landscape.svg'];
+const files = ['index.html', 'styles.css', 'app.js', 'places.js', 'places-data.json', 'sample-data.json', 'assets/jeju-landscape.svg'];
 
 // Never copy raw CSV/PDF data or a whole workspace into the public output.
 async function listFiles(directory, prefix = '') {
@@ -27,6 +27,8 @@ async function listFiles(directory, prefix = '') {
 const unexpected = (await listFiles(output)).filter(file => !files.includes(file));
 if (unexpected.length) throw new Error(`Unexpected files in dist; review them before publishing: ${unexpected.join(', ')}`);
 JSON.parse(await readFile(path.join(root, 'sample-data.json'), 'utf8'));
+const places = JSON.parse(await readFile(path.join(root, 'places-data.json'), 'utf8'));
+if (!places.places?.length) throw new Error('Missing public place snapshot; refresh manually before deployment.');
 for (const file of files) {
   await mkdir(path.dirname(path.join(output, file)), { recursive: true });
   await copyFile(path.join(root, file), path.join(output, file));

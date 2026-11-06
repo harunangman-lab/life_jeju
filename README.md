@@ -1,6 +1,6 @@
 # 제주 한 권
 
-HTML·CSS·JavaScript로 만든 제주 1년살기 앱 첫 버전입니다. 로그인 및 외부 서비스 연결 없이 동작합니다.
+HTML·CSS·JavaScript로 만든 제주 1년살기 앱 무료 체험판입니다. 로그인·결제·유료 AI·서버 함수 없이 동작합니다. 산책 장소는 비짓제주에서 수동 수집한 정적 데이터로 제공합니다.
 
 ## 실행
 
@@ -13,10 +13,12 @@ HTML을 직접 더블클릭하면 JSON을 읽지 못할 수 있으므로 로컬 
 - index.html: 화면 기본 구조와 팝업
 - styles.css: 아이보리·숲색 반응형 디자인
 - app.js: 메뉴, 필터, 상세 팝업, 기록 작성, 책 미리보기
+- places.js: 실제 장소 검색·필터·출처·장소별 글쓰기
+- places-data.json: 인증키를 제거한 실제 장소 24곳의 스냅샷
 - sample-data.json: 글감·가상 산책·가상 배움·체험 기록
 - assets/jeju-landscape.svg: 로컬 일러스트
 
-기존 CSV는 기준연월·지역·방문 집계 또는 소비 집계 중심이며 자료별 지역 코드가 다릅니다. 첫 버전에서는 원본 CSV·PDF를 수정하거나 직접 연결하지 않았습니다. 실제 강좌·운영시간·가격 정보는 생성하지 않았습니다.
+기존 CSV는 기준연월·지역·방문 집계 또는 소비 집계 중심이며 자료별 지역 코드가 다릅니다. 원본 CSV·PDF는 수정하거나 직접 연결하지 않았습니다. 실제 강좌·운영시간·가격 정보는 생성하지 않았습니다. 배움 프로그램과 체험 기록은 예시로 표시합니다.
 
 ## 확인
 
@@ -31,13 +33,26 @@ HTML을 직접 더블클릭하면 JSON을 읽지 못할 수 있으므로 로컬 
 ## GitHub와 Vercel 배포
 
 1. GitHub에서 새 저장소를 만들고 앱 소스를 올립니다. `.gitignore`는 허용된 앱 파일만 추적하도록 구성되어 있습니다. 브라우저에서 수동 업로드할 때는 이 규칙이 적용되지 않으므로 CSV·PDF·XLSX·HWP·tmp 폴더를 직접 업로드하지 마세요.
-2. 저장소 루트에 index.html, styles.css, app.js, sample-data.json, assets/jeju-landscape.svg, build.mjs, vercel.json이 있어야 합니다. README.md, start.ps1, .gitignore, .vercelignore도 함께 보관합니다.
+2. 저장소 루트에 index.html, styles.css, app.js, places.js, places-data.json, sample-data.json, assets/jeju-landscape.svg, build.mjs, vercel.json이 있어야 합니다. README.md, start.ps1, .gitignore, .vercelignore, scripts 폴더도 함께 보관합니다.
 3. Vercel에서 Add New → Project → 해당 GitHub 저장소를 Import합니다.
 4. Framework Preset은 Other, Root Directory는 저장소 루트(./), Build Command는 node build.mjs, Output Directory는 dist입니다. vercel.json에 이 설정을 담았습니다. 별도 패키지 설치나 환경변수는 필요하지 않습니다.
 5. Deploy 후 첫 화면, 산책·배움 카드, 기록 저장과 새로고침, 내 책을 확인합니다.
 
-Node.js가 설치된 환경에서는 `node build.mjs`로 배포 파일만 dist에 생성할 수 있습니다. dist에는 웹앱용 5개 파일만 들어갑니다. 원본 데이터와 로컬 실행 스크립트는 서비스되지 않습니다.
+Node.js가 설치된 환경에서는 `node build.mjs`로 배포 파일만 dist에 생성할 수 있습니다. dist에는 웹앱용 7개 파일만 들어갑니다. 원본 데이터·인증키·갱신 스크립트는 서비스되지 않습니다. 빌드는 네트워크나 API 호출 없이 실행됩니다.
 
 첫 배포 주소와 localhost는 서로 다른 저장 공간입니다. 로컬에서 쓴 기록은 배포 주소로 자동 이전되지 않습니다. 배포 후에도 기록은 접속한 브라우저에만 저장됩니다.
 
 공식 설정 참고: https://vercel.com/docs/builds/configure-a-build
+
+## 무료 체험 운영과 비짓제주 갱신
+
+- 방문자는 정적 JSON을 받아 검색합니다. 방문·검색·기록 작성으로 비짓제주 API를 호출하지 않습니다.
+- 데이터는 2026-11-06 비짓제주 API 59페이지(5,876건)를 한 차례 수집했습니다. 연결 확인 1회를 포함해 이번 작업의 API 요청은 60회입니다.
+- 자연 관련 이름·태그 후보 527곳에서 소개를 검토해 상점·실내 테마파크·차도 중심 장소 등을 제외하고 24곳을 골랐습니다. scripts/place-selection.json에 선택한 ID를 보관합니다. 쉬운 경로·안전·연령별 적합성을 현장 검증한 목록이 아닙니다.
+- 실제 사진은 포함하지 않습니다. 카드에는 실제 장소 정보와 일러스트를 구분하고 출처·수집일·원문 링크를 표시합니다. 입장료와 시설 상태는 별도로 확인해야 합니다.
+- 수동 갱신은 Python 3으로 `python scripts/update-places.py --key-file "인증키가_들어있는_로컬파일.txt"`를 실행합니다. 기본 최대 60페이지, 순차 요청 사이 0.4초 대기, 자동 재시도 없음입니다. 키는 URL 요청에만 쓰며 로그·스냅샷·GitHub에는 저장하지 않습니다. HTTPS만 사용합니다.
+- 갱신 실패·선정 ID 누락·페이지 한도 초과 시 기존 스냅샷을 보존합니다. 최신 JSON을 검토한 뒤 GitHub에 반영합니다. 자동 스케줄이나 Vercel 환경변수 설정은 필요 없습니다.
+- Vercel의 Hobby(개인·비상업 용도) 무료 플랜과 기본 vercel.app 도메인을 유지합니다. 유료 업그레이드·유료 체험·추가 스토리지·AI 서비스는 신청하지 않습니다. 현재 계정 플랜은 이 코드로 확인하거나 강제할 수 없습니다. 무료 배포라고 해도 사업 목적의 서비스라면 Hobby 허용 여부를 별도로 검토해야 합니다.
+- 공식 Hobby 안내상 한도 초과 시 대부분 해당 기능을 다시 쓸 수 있을 때까지 기다려야 합니다. 무료는 무제한 제공을 뜻하지 않습니다. https://vercel.com/docs/plans/hobby
+- 소수 사용자에게 링크를 직접 공유하는 체험 운영을 전제로 검색엔진 noindex를 추가했습니다. noindex는 접근 제한이 아닙니다. 링크를 아는 다른 사람도 접속할 수 있습니다. 초대 전용 인증이나 비밀번호 보호는 이번 변경에서 추가하지 않았습니다.
+- 기록은 이용자의 브라우저에만 저장됩니다. 운영자가 볼 수 없고 계정 간 공유되지 않지만, 같은 브라우저를 함께 쓰거나 브라우저 데이터를 삭제하면 영향을 받습니다.

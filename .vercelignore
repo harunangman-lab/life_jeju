@@ -6,6 +6,8 @@
 !/sample-data.json
 !/build.mjs
 !/vercel.json
+!/places.js
+!/places-data.json
 !/assets/
 /assets/*
 !/assets/jeju-landscape.svg

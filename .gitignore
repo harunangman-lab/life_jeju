@@ -9,6 +9,12 @@
 !/sample-data.json
 !/build.mjs
 !/vercel.json
+!/places.js
+!/places-data.json
+!/scripts/
+/scripts/*
+!/scripts/update-places.py
+!/scripts/place-selection.json
 !/start.ps1
 !/README.md
 !/assets/
