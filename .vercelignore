@@ -7,6 +7,7 @@
 !/build.mjs
 !/vercel.json
 !/places.js
+!/journal.js
 !/places-data.json
 !/assets/
 /assets/*

@@ -6,7 +6,7 @@
   <meta name="description" content="산책하고 읽고 배우며, 제주에서 내 이름의 책 한 권을 준비하는 공간">
   <title>제주 한 권 — 나를 만나는 사계절</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="styles.css"><script src="places.js" defer></script><script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css"><script src="places.js" defer></script><script src="journal.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -28,10 +28,22 @@
     <footer>제주 한 권 <span>걷고, 배우고, 쓰는 나의 사계절</span><button id="data-info">데이터 안내</button></footer>
   </div>
   <dialog id="detail-dialog"><button class="dialog-close" aria-label="팝업 닫기">×</button><div id="dialog-content"></div></dialog>
-  <dialog id="write-dialog">
+  <dialog id="write-dialog" aria-labelledby="writer-title">
     <button class="dialog-close" aria-label="작성 창 닫기">×</button>
-    <p class="eyebrow">MY LITTLE STORY</p><h2>오늘을 한 페이지로</h2><p class="muted">완벽한 문장이 아니어도 괜찮아요.</p>
-    <form id="entry-form"><label>기록 종류<select name="type"><option>일상</option><option>산책</option><option>독서</option><option>배움</option></select></label><label>제목<input name="title" maxlength="100" required placeholder="오늘을 기억할 이름"></label><label>나의 이야기<textarea name="body" rows="7" maxlength="20000" required placeholder="오늘 발견한 작은 것부터 적어보세요."></textarea></label><p class="storage-note">이 브라우저에만 저장됩니다. 공용 기기에서는 주의해 주세요.</p><p id="save-error" role="alert"></p><button class="primary" type="submit">기록 저장하기</button></form>
+    <p class="eyebrow">MY LITTLE STORY</p><h2 id="writer-title">오늘을 한 페이지로</h2><p class="muted">완벽한 문장이 아니어도 괜찮아요.</p>
+    <form id="entry-form">
+      <div class="editor-row"><div><label for="entry-type">기록 종류</label><select name="type" id="entry-type"><option>산책</option><option>독서</option><option>배움</option><option>일상</option></select></div><div><label for="entry-date">날짜</label><input name="date" id="entry-date" type="date" required></div></div>
+      <div><label for="entry-title">제목</label><input name="title" id="entry-title" maxlength="100" required placeholder="오늘을 기억할 이름"></div>
+      <div><label for="entry-place">장소 <span class="optional">선택</span></label><input name="place" id="entry-place" maxlength="200" placeholder="예: 금산공원, 집 앞 책방"></div>
+      <div><label for="entry-body">본문</label><textarea name="body" id="entry-body" rows="8" maxlength="20000" required placeholder="오늘 발견한 작은 것부터 적어보세요."></textarea></div>
+      <div><label for="entry-tags">태그 <span class="optional">선택</span></label><input name="tags" id="entry-tags" maxlength="600" placeholder="쉼, 바다, 새로운 시작" aria-describedby="tags-help"><p class="caption" id="tags-help">쉼표로 구분해 주세요. 최대 20개, 태그당 40자까지 입력할 수 있어요.</p></div>
+      <p id="draft-status" class="draft-status" role="status" aria-live="polite">아직 작성 전이에요.</p>
+      <p class="storage-note">이 기기에만 저장되는 체험 기록입니다. 같은 브라우저에서만 볼 수 있으며, 브라우저 데이터 삭제 시 사라집니다.</p>
+      <p id="save-error" role="alert"></p><button class="primary" type="submit" id="entry-save">기록 저장하기</button>
+    </form>
   </dialog>
+  <input id="journal-import-file" type="file" accept=".json,application/json" hidden>
+  <dialog id="import-dialog" aria-labelledby="import-title"><button class="dialog-close" aria-label="가져오기 창 닫기">×</button><p class="eyebrow">BRING YOUR STORIES BACK</p><h2 id="import-title">기록 불러오기</h2><p id="import-summary"></p><p class="notice">기존 기록은 유지하며 같은 ID의 기록은 건너뜁니다. 백업 파일은 다른 서비스로 전송하지 않습니다.</p><p id="import-error" role="alert"></p><div class="dialog-actions"><button type="button" id="import-cancel" class="outline">취소</button><button type="button" id="import-confirm" class="primary">가져오기</button></div></dialog>
+  <dialog id="journal-action-dialog" aria-labelledby="journal-action-title"><button class="dialog-close" aria-label="확인 창 닫기">×</button><h2 id="journal-action-title">기록 확인</h2><p id="journal-action-message" class="record-body"></p><div class="dialog-actions"><button type="button" id="journal-action-cancel" class="outline">취소</button><button type="button" id="journal-action-confirm" class="danger-button">계속</button></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
 </body></html>

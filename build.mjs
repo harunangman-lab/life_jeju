@@ -4,7 +4,7 @@ import path from 'node:path';
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const output = path.join(root, 'dist');
-const files = ['index.html', 'styles.css', 'app.js', 'places.js', 'places-data.json', 'sample-data.json', 'assets/jeju-landscape.svg'];
+const files = ['index.html', 'styles.css', 'app.js', 'places.js', 'journal.js', 'places-data.json', 'sample-data.json', 'assets/jeju-landscape.svg'];
 
 // Never copy raw CSV/PDF data or a whole workspace into the public output.
 async function listFiles(directory, prefix = '') {

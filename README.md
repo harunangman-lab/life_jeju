@@ -13,6 +13,7 @@ HTML을 직접 더블클릭하면 JSON을 읽지 못할 수 있으므로 로컬 
 - index.html: 화면 기본 구조와 팝업
 - styles.css: 아이보리·숲색 반응형 디자인
 - app.js: 메뉴, 필터, 상세 팝업, 기록 작성, 책 미리보기
+- journal.js: 기록 작성·수정·검색·삭제, 임시 저장, JSON 백업·복원
 - places.js: 실제 장소 검색·필터·출처·장소별 글쓰기
 - places-data.json: 인증키를 제거한 실제 장소 24곳의 스냅샷
 - sample-data.json: 글감·가상 산책·가상 배움·체험 기록
@@ -33,12 +34,12 @@ HTML을 직접 더블클릭하면 JSON을 읽지 못할 수 있으므로 로컬 
 ## GitHub와 Vercel 배포
 
 1. GitHub에서 새 저장소를 만들고 앱 소스를 올립니다. `.gitignore`는 허용된 앱 파일만 추적하도록 구성되어 있습니다. 브라우저에서 수동 업로드할 때는 이 규칙이 적용되지 않으므로 CSV·PDF·XLSX·HWP·tmp 폴더를 직접 업로드하지 마세요.
-2. 저장소 루트에 index.html, styles.css, app.js, places.js, places-data.json, sample-data.json, assets/jeju-landscape.svg, build.mjs, vercel.json이 있어야 합니다. README.md, start.ps1, .gitignore, .vercelignore, scripts 폴더도 함께 보관합니다.
+2. 저장소 루트에 index.html, styles.css, app.js, places.js, journal.js, places-data.json, sample-data.json, assets/jeju-landscape.svg, build.mjs, vercel.json이 있어야 합니다. README.md, start.ps1, .gitignore, .vercelignore, scripts 폴더도 함께 보관합니다.
 3. Vercel에서 Add New → Project → 해당 GitHub 저장소를 Import합니다.
 4. Framework Preset은 Other, Root Directory는 저장소 루트(./), Build Command는 node build.mjs, Output Directory는 dist입니다. vercel.json에 이 설정을 담았습니다. 별도 패키지 설치나 환경변수는 필요하지 않습니다.
 5. Deploy 후 첫 화면, 산책·배움 카드, 기록 저장과 새로고침, 내 책을 확인합니다.
 
-Node.js가 설치된 환경에서는 `node build.mjs`로 배포 파일만 dist에 생성할 수 있습니다. dist에는 웹앱용 7개 파일만 들어갑니다. 원본 데이터·인증키·갱신 스크립트는 서비스되지 않습니다. 빌드는 네트워크나 API 호출 없이 실행됩니다.
+Node.js가 설치된 환경에서는 `node build.mjs`로 배포 파일만 dist에 생성할 수 있습니다. dist에는 웹앱용 8개 파일만 들어갑니다. 원본 데이터·인증키·갱신 스크립트는 서비스되지 않습니다. 빌드는 네트워크나 API 호출 없이 실행됩니다.
 
 첫 배포 주소와 localhost는 서로 다른 저장 공간입니다. 로컬에서 쓴 기록은 배포 주소로 자동 이전되지 않습니다. 배포 후에도 기록은 접속한 브라우저에만 저장됩니다.
 
@@ -65,3 +66,15 @@ Node.js가 설치된 환경에서는 `node build.mjs`로 배포 파일만 dist�
 - places-data.json의 장소별 walkInfo에 검증된 보행 정보를 입력할 수 있습니다. durationMinutes는 양수 분 단위, difficulty는 쉬움·보통·어려움, slope/toilet/bench/transit는 설명, route는 시간·난이도의 기준 경로입니다. sourceUrl(HTTPS)과 checkedAt(YYYY-MM-DD)이 있어야 확인된 값으로 표시합니다. 수동 갱신 스크립트는 기존 walkInfo를 보존합니다.
 - 방문량이나 사진·장소 이름으로 난이도, 실시간 혼잡도, 안전도를 추정하지 않습니다. 일반 관광지의 체류시간을 보행 코스 소요시간으로 바꾸어 쓰지 않습니다.
 - 상세 팝업은 각 시설 정보를 개별 표시하며 ‘여기서 기록하기’로 장소별 글감과 산책 종류가 입력된 작성 창을 엽니다. 닫기 버튼과 Esc 키를 지원합니다. 사진이 없거나 로딩에 실패하면 일러스트로 대체합니다.
+
+## 이 기기에 저장하는 내 기록
+
+- 기록 종류(산책·독서·배움·일상), 날짜, 제목, 본문, 장소, 태그를 입력합니다. 장소와 태그는 선택 사항입니다. 제목은 100자, 본문은 20,000자, 장소는 200자, 태그는 20개 및 각 40자까지 지원합니다.
+- 오늘의 글감은 본문에, 산책 상세의 ‘여기서 기록하기’는 장소명과 관련 질문을 작성 화면에 채웁니다. 기록 상세에서 수정·삭제할 수 있고, 삭제 전에 앱 확인창을 띄웁니다. 임시 글을 다른 글로 바꾸는 작업도 확인합니다.
+- 기록 날짜 내림차순으로 정렬하고 같은 날짜에는 최근 수정 순서로 표시합니다. 제목·본문·장소·태그 검색과 종류별 필터를 함께 적용할 수 있습니다. 예시 기록은 별도 접힌 영역에 표시하며 검색·통계·백업·원고에서 제외합니다.
+- 기존 저장 키 `jeju-one-book.entries.v1`을 유지합니다. 기존 한국어 날짜를 새 날짜 형식으로 읽으며 첫 변경 전에 기존 형식의 원본을 별도 로컬 키에 보관합니다. 읽을 수 없는 기존 데이터는 자동 삭제하거나 덮어쓰지 않습니다.
+- 입력 후 약 0.4초에 브라우저 localStorage로 임시 저장하며, 창 닫기·페이지 이탈 시에도 남은 입력을 저장합니다. 임시 글은 브라우저별 한 편입니다. 다시 열면 이어 쓸 수 있고 정식 저장이 성공하면 임시 글을 정리합니다. 저장 상태와 실패 안내를 표시합니다.
+- JSON 백업은 app/version/exportedAt/entries를 가진 파일이며 정식 저장한 기록 전체만 담습니다. 임시 글은 정식 저장 후 백업해야 합니다. JSON 파일은 최대 10MB, 10,000편까지 읽고 형식·길이·날짜를 검증한 뒤 추가·중복 건수를 보여줍니다. 기존 배열 형태의 백업도 읽을 수 있습니다.
+- 가져오기는 기존 ID를 유지하고 중복 ID를 건너뜁니다. 수정본으로 기존 글을 덮어쓰지 않습니다. 잘못된 파일·저장 공간 부족·다른 창의 변경 감지 시 기존 기록을 보존합니다. 정상 반영은 한 번의 기록 저장으로 처리합니다.
+- 사용자 글·장소·태그는 HTML을 이스케이프하거나 textContent로 표시합니다. JSON과 글은 서버나 외부 AI로 전송하지 않습니다. 실제 사용자 데이터는 GitHub에 포함되지 않습니다.
+- 같은 기기라도 브라우저·사이트 주소가 다르면 저장 공간이 다릅니다. 브라우저 저장 데이터를 지우면 복원이 어려우므로 중요한 글은 JSON 백업을 따로 보관하세요. 백업 파일에는 본문이 포함됩니다.
