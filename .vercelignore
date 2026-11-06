@@ -1,0 +1,11 @@
+# Upload only the files required to build the website.
+/*
+!/index.html
+!/styles.css
+!/app.js
+!/sample-data.json
+!/build.mjs
+!/vercel.json
+!/assets/
+/assets/*
+!/assets/jeju-landscape.svg

@@ -1,0 +1,16 @@
+# Only reviewed app source belongs in this repository.
+# Raw survey data, PDFs, temporary files and local secrets stay on this computer.
+/*
+!/.gitignore
+!/.vercelignore
+!/index.html
+!/styles.css
+!/app.js
+!/sample-data.json
+!/build.mjs
+!/vercel.json
+!/start.ps1
+!/README.md
+!/assets/
+/assets/*
+!/assets/jeju-landscape.svg
