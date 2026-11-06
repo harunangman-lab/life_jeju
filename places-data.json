@@ -5,7 +5,7 @@
   "totalFetched": 5876,
   "candidateCount": 527,
   "selection": "이름·태그로 추린 후보의 소개를 검토해 테마파크·상점·차도 중심 장소와 중복 생활권 일부를 제외한 체험용 24곳입니다. 쉬운 경로·안전·접근성을 현장 검증한 목록이 아닙니다.",
-  "notice": "실제 장소 정보이며 추천 순위나 보행 경로가 아닙니다. 운영시간·입장료·난이도·시설 현황은 방문 전 원문과 운영처에 확인해 주세요. 사진은 원본 대신 앱 일러스트를 사용합니다.",
+  "notice": "실제 장소 정보이며 추천 순위나 보행 경로가 아닙니다. 운영시간·입장료·난이도·시설 현황은 방문 전 원문과 운영처에 확인해 주세요. 사진이 없는 장소는 일러스트를 표시합니다.",
   "places": [
     {
       "id": "CNTS_000000000000974",
@@ -25,7 +25,10 @@
         "자연경관"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000000974",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202112/20/19fa35ab-7f9b-45e8-963f-c0bab26b4b3f.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202112/20/5aef697e-8af5-4fb1-b222-4358cd278ac2.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500061",
@@ -55,7 +58,10 @@
         "문화관광해설사인증"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500061",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202002/25/c9d1a8e9-57cb-4149-9958-45da69ed575a.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202002/25/371dbfb7-e92d-482a-bfa3-cbb039a36177.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500035",
@@ -76,7 +82,10 @@
         "포토스팟"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500035",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/ecdac3b6-aee2-459f-98bd-b2d260befe6e.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/39edc0ee-4e64-4125-9f13-3eab58819aed.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500011",
@@ -97,7 +106,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500011",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/cbeb6965-95e1-40d8-821f-5cd4e0763e5b.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/8cc1bf8e-3ff7-4644-b3a6-f1576ad3bc09.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500046",
@@ -121,7 +133,10 @@
         "k-drama"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500046",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201907/25/a30bb3ff-c287-4de2-80d0-428e3281e8c0.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201907/25/dffe0d39-0899-4db3-9dc7-1efb930f3005.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000019536",
@@ -143,7 +158,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000019536",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/ddae61fc-1e34-47b2-854d-3b97ffe1b76b.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/fc24c7a9-a743-4ab9-b989-86c8d07d9786.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000020964",
@@ -166,7 +184,10 @@
         "자연경관"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020964",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/cd13910f-47a8-402c-8d1c-e84123dd3cc0.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/b5b2affb-c8c8-4f2b-be66-dc9a1cdbc520.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500040",
@@ -191,7 +212,10 @@
         "물놀이"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500040",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201903/12/9f94ece3-2dae-4baa-9ac8-fa87d3f031fc.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201903/12/0ae5b334-11c2-4883-8301-e492dfc5edc5.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500013",
@@ -216,7 +240,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500013",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/053450e8-8370-4b58-a606-fcd63098d962.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/5347f00e-4645-40d8-a0ca-e01b5dd51c51.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_200000000007534",
@@ -246,7 +273,10 @@
         "물놀이"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007534",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201809/21/60de58c6-b51c-4143-912b-1f85f5eb6830.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201809/21/7348c336-464e-4da6-b00b-d5f7fc32c43f.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000021250",
@@ -269,7 +299,10 @@
         "어트랙션"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000021250",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/a7f17981-d654-46dc-ac06-d089798b9c4e.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/26e4a7d7-1eb1-4b05-8191-38bc784b8455.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500015",
@@ -290,7 +323,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500015",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/d5f75de0-c66f-44f6-927f-888485d01622.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/61ff2878-12c3-40e3-ab4a-48c65fab6963.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_200000000007859",
@@ -313,7 +349,10 @@
         "포토스팟"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_200000000007859",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201811/14/069f3732-e7b2-4811-97e9-e304c09d2b1b.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201811/14/968b4ec3-313c-411a-b70c-1fa88d19a771.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500017",
@@ -337,7 +376,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500017",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/8dd65907-17fa-4317-8193-4e45b074de36.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/c84492c3-bc8d-4939-b2b4-827184d43a28.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000021522",
@@ -364,7 +406,10 @@
         "어린이"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000021522",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202112/06/ef3fe97f-621d-445b-b767-b94ebdbd8a95.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202112/06/e9506ae1-c2e6-463a-b7ee-ba46b0339426.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500026",
@@ -388,7 +433,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500026",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202112/16/b5894ad7-b221-41f6-aad4-1d2d4312cd74.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202112/16/34e2f654-5f22-4473-b83d-b5c72889713b.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000018413",
@@ -426,7 +474,10 @@
         "2026혼저옵서개"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000018413",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/315ce1af-1c6c-4977-8668-4710321df6a1.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/d5b7e9a3-8cfb-41cf-9623-9b15651d4c55.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000022852",
@@ -450,7 +501,10 @@
         "어트랙션"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000022852",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202112/16/965fa772-dfa8-4cce-903a-804e4510da27.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202112/16/8f02b8d2-b4a1-45a4-b4ae-64c07d09e460.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500027",
@@ -473,7 +527,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500027",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/d51d672c-21bd-454b-96cf-825847093a49.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/003e10e2-a286-4620-9b8d-1aa1da56628f.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500163",
@@ -490,7 +547,10 @@
         "둔지오름，말굽형화구，오름트레킹，제주자연경관，억새숲길，visitjeju，비짓제주"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500163",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201907/29/1184805a-d761-4d03-a9d1-5e96684d3342.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201907/29/3acce4dc-9217-4767-9be6-51baaa584a02.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_300000000013115",
@@ -514,7 +574,10 @@
         "다이빙"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_300000000013115",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202407/25/56e6d0b4-ee84-4363-93ad-433aa708c8c3.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202407/25/2c06697d-80b4-4c31-ae8c-4c1e4483bfbc.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500033",
@@ -535,7 +598,10 @@
         "도보"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500033",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/232864ce-1b6a-4178-a5a6-b99a69a793de.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/2b316191-a887-436b-ba48-e7ce3a011e27.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CNTS_000000000020780",
@@ -559,7 +625,10 @@
         "어트랙션"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000020780",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/201804/30/602b1bc2-4138-4d39-a893-3fcb94f14160.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/201804/30/4d608b17-7660-4f1f-8d58-f8f8f12a683a.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     },
     {
       "id": "CONT_000000000500034",
@@ -586,7 +655,11 @@
         "세계지질공원"
       ],
       "sourceUrl": "https://www.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500034",
-      "sample": false
+      "sample": false,
+      "photoUrl": "https://api.cdn.visitjeju.net/photomng/imgpath/202410/16/57127b8a-f9c3-4874-8541-3261e6da44d5.webp",
+      "thumbnailUrl": "https://api.cdn.visitjeju.net/photomng/thumbnailpath/202410/16/66facb67-f2d8-4ad3-8032-4a66f317d313.webp",
+      "photoCredit": "제주관광공사 비짓제주 제공"
     }
-  ]
+  ],
+  "photosFetchedAt": "2026-11-06T11:22:08+09:00"
 }
