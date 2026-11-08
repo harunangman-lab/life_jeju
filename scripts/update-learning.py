@@ -76,6 +76,13 @@ def build(seogwipo_pages,education,checked):
     sample_titles={'글쓰기':'일상의 한 장면을 에세이로','독서':'책과 나를 잇는 독서','자연관찰':'계절을 읽는 자연관찰','사진':'산책 사진 한 장','공예':'손으로 만드는 작은 공예','디지털 활용':'전자책을 위한 디지털 첫걸음'}
     for index,(subject,title) in enumerate(sample_titles.items()):
         programs.append({'id':f'sample-learning-{index+1}','title':title,'subjects':[subject],'region':None,'institution':None,'place':None,'plan':None,'weekdays':[],'startsAt':None,'endsAt':None,'applyStartsAt':None,'applyEndsAt':None,'tuition':None,'materials':None,'eligibility':None,'description':f'{subject}에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.','phone':None,'sourceUrl':None,'applicationUrl':None,'checkedAt':None,'source':'앱 체험 예시','sourceKind':'sample','sample':True})
+    # Keep the supplied file grouping separate from verified classroom geography.
+    for program in programs:
+        if program['sample']:
+            continue
+        program['sourceGroup']='jeju' if program['sourceKind']=='catalog' else 'seogwipo'
+        program['sourceGroupLabel']='제주시 평생교육 자료' if program['sourceKind']=='catalog' else '서귀포시 평생학습관 자료'
+        program['sourceGroupNote']='첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다.' if program['sourceKind']=='catalog' else '첨부 HWP의 서귀포시 평생학습관 API 자료입니다.'
     return {'version':1,'checkedAt':checked,'sources':[{'name':'서귀포시 평생학습관','url':SEOGWIPO,'coverage':f'최신 {len(seogwipo_pages)}페이지 {source_count}건에서 관심 주제 분류','recordsFetched':source_count},{'name':'제주특별자치도교육청 직속기관 평생교육강좌 과목 정보','url':'https://www.data.go.kr/data/15145035/fileData.do','recordsFetched':len(education.get('data',[])),'sourceDate':'2026-08-03','note':f'명확한 아동·교원 대상 제목 {excluded}건을 제외하고 중복 행을 합쳤습니다. 성인 수강 가능을 의미하지 않습니다.'}],'notice':'주제는 제목을 기준으로 앱에서 분류했습니다. 실제 자료와 예시를 구분하며, 신청 가능 여부·자격·총비용은 원문에서 확인해 주세요. 수강료가 무료여도 재료비 등이 별도일 수 있습니다.','programs':programs}
 
 def main():
