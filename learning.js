@@ -8,7 +8,7 @@ window.jejuLearning=(()=>{
   const safe=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let snapshot=null,programs=[],saved=new Set(),storageError='',dataError='',activeId=null;
   let onChange=()=>{},notify=()=>{};
-  const state={query:'',region:'전체',topic:'전체',weekday:'전체',cost:'전체',courseType:'전체',category:'전체',onlySaved:false};
+  const state={query:'',topic:'전체',courseType:'regular',category:'전체',onlySaved:false};
   function link(value){try{const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password&&!/[?&](?:serviceKey|apiKey)=/i.test(url.search)?url.href:'';}catch{return '';}}
   function date(value,withTime=false){
     if(!value||Number.isNaN(Date.parse(value)))return unknown;
@@ -60,14 +60,14 @@ window.jejuLearning=(()=>{
   }
   function courseLabel(p){return categoriesOf(p).map(c=>`${c.group==='regular'?'정규과정':'특별과정'} · ${c.name}`).join(' / ')||unknown;}
   function courseNavigation(){
-    const groups=[['regular','정규과정'],['special','특별과정']];
-    return `<section class="course-browser" aria-labelledby="course-browser-title"><div class="section-head"><h2 id="course-browser-title">과정별로 찾아보기</h2><button type="button" class="chip ${state.courseType==='전체'?'active':''}" data-course-type="전체" aria-pressed="${state.courseType==='전체'}">전체 과정 (${programs.length})</button></div><div class="course-groups">${groups.map(([group,name])=>`<div class="course-group"><h3><button type="button" class="course-group-button ${state.courseType===group&&state.category==='전체'?'active':''}" data-course-type="${group}" aria-pressed="${state.courseType===group&&state.category==='전체'}">${name} 전체 (${programs.filter(p=>categoriesOf(p).some(c=>c.group===group)).length})</button></h3><div class="course-category-buttons" role="group" aria-label="${name} 세부 분류">${courseCategories.filter(c=>c.group===group).map(c=>`<button type="button" class="chip ${state.category===c.id?'active':''}" data-course-category="${c.id}" aria-pressed="${state.category===c.id}">${safe(c.name)} (${programs.filter(p=>categoriesOf(p).some(category=>category.id===c.id)).length})</button>`).join('')}</div></div>`).join('')}</div><p class="caption">숫자는 현재 보관된 강좌 수입니다. 목록이 없는 항목도 공식 페이지에서 확인할 수 있어요.</p></section>`;
+    return `<div class="course-tabs" role="group" aria-label="과정 선택">${[['regular','정규과정'],['special','특별과정']].map(([group,name])=>`<button type="button" class="course-tab ${state.courseType===group?'active':''}" data-course-type="${group}" aria-pressed="${state.courseType===group}">${name}</button>`).join('')}</div>${[['regular','정규과정'],['special','특별과정']].map(([group,name])=>`<div class="course-category-buttons" role="group" aria-label="${name} 세부 분류" data-course-panel="${group}" ${state.courseType!==group?'hidden':''}><button type="button" class="chip ${state.courseType===group&&state.category==='전체'?'active':''}" data-course-all="${group}" aria-pressed="${state.courseType===group&&state.category==='전체'}">전체</button>${courseCategories.filter(c=>c.group===group).map(c=>`<button type="button" class="chip ${state.category===c.id?'active':''}" data-course-category="${c.id}" aria-pressed="${state.category===c.id}">${safe(c.name)}</button>`).join('')}</div>`).join('')}`;
   }
   function updateCourseButtons(){
-    document.querySelectorAll('[data-course-type], [data-course-category]').forEach(button=>{
-      const active=button.dataset.courseCategory?button.dataset.courseCategory===state.category:button.dataset.courseType===state.courseType&&state.category==='전체';
+    document.querySelectorAll('[data-course-type], [data-course-category], [data-course-all]').forEach(button=>{
+      const active=button.dataset.courseCategory?button.dataset.courseCategory===state.category:button.dataset.courseAll?button.dataset.courseAll===state.courseType&&state.category==='전체':button.dataset.courseType===state.courseType;
       button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));
     });
+    document.querySelectorAll('[data-course-panel]').forEach(panel=>{panel.hidden=panel.dataset.coursePanel!==state.courseType;});
   }
   function courseContext(){
     const category=courseCategories.find(c=>c.id===state.category);
@@ -77,15 +77,15 @@ window.jejuLearning=(()=>{
   }
   function card(p){
     const status=application(p);
-    return `<article class="card program-card" data-learning-id="${safe(p.id)}"><div class="program-banner"><span>${safe(p.subjects.join(' · '))}</span><span class="${p.sample?'sample-badge':'program-source'}">${sourceLabel(p)}</span></div><div class="card-body"><button type="button" class="program-open" data-learn="${safe(p.id)}"><h3>${safe(p.title)}</h3><span class="caption">상세 정보 보기 ↗</span></button><dl class="program-facts"><dt>과정</dt><dd>${safe(courseLabel(p))}</dd><dt>지역</dt><dd>${safe(regionOf(p)||unknown)}</dd><dt>기관</dt><dd>${safe(p.institution||unknown)}${p.campus?` · ${safe(p.campus)}`:''}</dd><dt>장소</dt><dd>${safe(p.place||unknown)}</dd><dt>일정</dt><dd>${safe(range(p.startsAt,p.endsAt))}<br>${safe(p.plan||unknown)}</dd><dt>비용</dt><dd>${safe(fee(p))}</dd><dt>신청</dt><dd><span class="program-status">${safe(status.label)}</span></dd></dl>${saveButton(p)}<div class="program-apply-link">${applicationLink(p)}</div></div></article>`;
+    return `<article class="card program-card" data-learning-id="${safe(p.id)}"><div class="program-banner"><span>${safe(p.subjects.join(' · '))}</span><span class="${p.sample?'sample-badge':'program-source'}">${sourceLabel(p)}</span></div><div class="card-body"><button type="button" class="program-open" data-learn="${safe(p.id)}"><h3>${safe(p.title)}</h3><span class="caption">상세 정보 보기 ↗</span></button><dl class="program-facts"><dt>과정</dt><dd>${safe(courseLabel(p))}</dd><dt>장소</dt><dd>${safe(p.place||unknown)}</dd><dt>일정</dt><dd>${safe(range(p.startsAt,p.endsAt))}</dd><dt>신청</dt><dd><span class="program-status">${safe(status.label)}</span></dd></dl>${saveButton(p)}<div class="program-apply-link">${applicationLink(p)}</div></div></article>`;
   }
   function matches(p){
-    const query=state.query.toLocaleLowerCase();const tuition=amount(p.tuition);
-    return !p.sample&&p.sourceKind==='domin'&&(state.courseType==='전체'||categoriesOf(p).some(c=>c.group===state.courseType))&&(state.category==='전체'||categoriesOf(p).some(c=>c.id===state.category))&&(!state.onlySaved||saved.has(p.id))&&(state.region==='전체'||(state.region==='unknown'?!regionOf(p):regionOf(p)===state.region))&&(state.topic==='전체'||p.subjects.includes(state.topic))&&(state.weekday==='전체'||(state.weekday==='unknown'?!p.weekdays.length:p.weekdays.includes(state.weekday)))&&(state.cost==='전체'||(state.cost==='free'?tuition===0:state.cost==='paid'?tuition!==null&&tuition>0:tuition===null))&&(!query||[p.title,p.institution,p.campus,p.place,p.description,...p.subjects].join(' ').toLocaleLowerCase().includes(query));
+    const query=state.query.toLocaleLowerCase();
+    return !p.sample&&p.sourceKind==='domin'&&(state.courseType==='전체'||categoriesOf(p).some(c=>c.group===state.courseType))&&(state.category==='전체'||categoriesOf(p).some(c=>c.id===state.category))&&(!state.onlySaved||saved.has(p.id))&&(state.topic==='전체'||p.subjects.includes(state.topic))&&(!query||[p.title,p.institution,p.campus,p.place,p.description,...p.subjects].join(' ').toLocaleLowerCase().includes(query));
   }
   function list(){
     const visible=programs.filter(matches);
-    return `<div class="intro"><p class="eyebrow">LEARN & GROW</p><h1>새롭게 좋아할 일을 찾아서</h1><p>관심 있는 배움을 고르고, 배운 것을 나만의 이야기로 남겨보세요.</p></div><p class="notice">제주도민대학 강좌를 접수·교육 기간과 상관없이 살펴보세요. 지난 강좌도 검색됩니다. 신청은 강좌별 링크로 제주도민대학에 접속해 로그인한 뒤 진행해 주세요. 장기체류자의 신청 가능 여부는 기관에 확인해 주세요. 수강료가 무료여도 재료비 등이 별도일 수 있습니다.</p><p class="source-note">정보 확인일: ${safe(snapshot?.checkedAt||unknown)} · 주제는 제목을 기준으로 앱에서 분류했습니다.<br>공개 과정 메뉴별 첫 페이지에서 확인한 강좌입니다. 전체 강좌와 최신 접수·대기 상태는 <a href="https://www.jejudomin.kr/ko/rcou/01" target="_blank" rel="noopener noreferrer">제주도민대학 공식 사이트 ↗</a>에서 확인해 주세요.</p>${dataError?`<p class="journal-error" role="status">${safe(dataError)}</p>`:''}${storageError?`<p class="journal-error" role="alert">${safe(storageError)}</p>`:''}${courseNavigation()}<form id="learning-search" class="search-form walk-search-panel"><label for="learning-query">프로그램 검색</label><div><input id="learning-query" name="query" type="search" maxlength="100" value="${safe(state.query)}" placeholder="프로그램명, 기관, 관심 주제로 찾아보세요"><button class="primary" type="submit">검색</button></div><fieldset class="walk-filter-set"><legend>나에게 맞는 배움 찾기</legend><div class="learning-filter-grid"><div><label for="learning-region">지역</label><select id="learning-region" name="region">${options([['전체','전체 지역'],['제주시','제주시'],['서귀포시','서귀포시'],['unknown','정보 확인 필요']],state.region)}</select></div><div><label for="learning-topic">주제</label><select id="learning-topic" name="topic">${options([['전체','전체 주제'],...topics.map(t=>[t,t])],state.topic)}</select></div><div><label for="learning-weekday">요일</label><select id="learning-weekday" name="weekday">${options([['전체','전체 요일'],...days.map(d=>[d,d+'요일']),['unknown',unknown]],state.weekday)}</select></div><div><label for="learning-cost">비용 구분</label><select id="learning-cost" name="cost">${options([['전체','전체 비용'],['free','수강료 무료'],['paid','수강료 유료'],['unknown',unknown]],state.cost)}</select></div></div></fieldset><div class="learning-view-options"><label><input id="learning-saved-only" name="onlySaved" type="checkbox" ${state.onlySaved?'checked':''}>관심 프로그램만 보기 (${programs.filter(p=>saved.has(p.id)).length})</label></div></form><div id="learning-results">${courseContext()}<div class="walk-result-bar"><p class="source-note" role="status">${visible.length}개 프로그램을 찾았어요.</p><button class="text-button" id="learning-reset">검색·필터 초기화</button></div>${visible.length?`<div class="cards">${visible.map(card).join('')}</div>`:`<div class="empty walk-empty"><h2>조건에 맞는 강좌가 없어요</h2><p>현재 보관된 목록에 선택한 조건의 강좌가 없습니다. 위 공식 페이지에서 전체 목록을 확인해 주세요.<br>다른 지역·주제·요일로 검색하거나 필터를 초기화해 보세요.</p></div>`}</div><p class="source-note">관심 목록은 이 브라우저에만 저장됩니다. 이 앱에서 수강 신청이나 결제는 진행하지 않습니다.</p>`;
+    return `<div class="intro"><p class="eyebrow">LEARN & GROW</p><h1>새롭게 좋아할 일을 찾아서</h1><p>과정을 고르고, 나에게 맞는 배움을 찾아보세요.</p></div>${dataError?`<p class="journal-error" role="status">${safe(dataError)}</p>`:''}${storageError?`<p class="journal-error" role="alert">${safe(storageError)}</p>`:''}<form id="learning-search" class="search-form learning-search-panel"><fieldset class="walk-filter-set"><legend>나에게 맞는 배움 찾기</legend>${courseNavigation()}<label for="learning-query">강좌 검색</label><div class="learning-search-row"><input id="learning-query" name="query" type="search" maxlength="100" value="${safe(state.query)}" placeholder="강좌명이나 배우고 싶은 내용을 입력하세요"><button class="primary" type="submit">검색</button></div><div class="learning-refine"><div><label for="learning-topic">주제</label><select id="learning-topic" name="topic">${options([['전체','전체 주제'],...topics.map(t=>[t,t])],state.topic)}</select></div><label class="learning-saved-option"><input id="learning-saved-only" name="onlySaved" type="checkbox" ${state.onlySaved?'checked':''}>관심 프로그램만 보기 (${programs.filter(p=>saved.has(p.id)).length})</label></div></fieldset></form><p class="caption">지난 강좌도 검색됩니다. 신청은 제주도민대학 사이트에서 로그인 후 진행해 주세요.</p><div id="learning-results">${courseContext()}<div class="walk-result-bar"><p class="source-note" role="status">${visible.length}개 프로그램을 찾았어요.</p><button class="text-button" id="learning-reset">검색·필터 초기화</button></div>${visible.length?`<div class="cards">${visible.map(card).join('')}</div>`:`<div class="empty walk-empty"><h2>조건에 맞는 강좌가 없어요</h2><p>보관된 목록에 해당 강좌가 없습니다.<br>위 공식 페이지에서 전체 목록을 확인하거나 다른 분류·주제를 선택해 보세요.</p></div>`}</div><details class="learning-data-note"><summary>자료 안내 · ${safe(snapshot?.checkedAt||unknown)} 확인</summary><p class="source-note">공개 과정 메뉴별 첫 페이지에서 확인한 강좌입니다. 전체 강좌와 최신 접수·대기 상태는 제주도민대학 공식 사이트에서 확인해 주세요. 주제는 제목을 기준으로 앱에서 분류했습니다. 관심 목록은 이 브라우저에만 저장됩니다.</p></details>`;
   }
   function details(p){
     activeId=p.id;const status=application(p);
@@ -103,10 +103,10 @@ window.jejuLearning=(()=>{
   function readFilters(form){
     const values=new FormData(form);
     state.query=String(values.get('query')||'').trim().slice(0,100);
-    for(const name of ['region','topic','weekday','cost'])state[name]=String(values.get(name)||'전체');
+    for(const name of ['topic'])state[name]=String(values.get(name)||'전체');
     state.onlySaved=values.get('onlySaved')!==null;
   }
-  function reset(){Object.assign(state,{query:'',region:'전체',topic:'전체',weekday:'전체',cost:'전체',courseType:'전체',category:'전체',onlySaved:false});}
+  function reset(){Object.assign(state,{query:'',topic:'전체',courseType:'regular',category:'전체',onlySaved:false});}
   function toggle(id){
     if(!programs.some(p=>p.id===id))return;
     readSaved();if(storageError){notify(storageError);refresh();return;}
@@ -126,8 +126,11 @@ window.jejuLearning=(()=>{
       const category=courseCategories.find(c=>c.id===button.dataset.courseCategory);if(!category)return;
       state.courseType=category.group;state.category=category.id;updateResults();updateCourseButtons();return;
     }
+    if(button?.dataset.courseAll){
+      state.courseType=button.dataset.courseAll;state.category='전체';updateResults();updateCourseButtons();return;
+    }
     if(button?.dataset.courseType){
-      if(!['전체','regular','special'].includes(button.dataset.courseType))return;
+      if(!['regular','special'].includes(button.dataset.courseType))return;
       state.courseType=button.dataset.courseType;state.category='전체';updateResults();updateCourseButtons();return;
     }
     if(button?.dataset.saveProgram){toggle(button.dataset.saveProgram);return;}
