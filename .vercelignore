@@ -8,6 +8,8 @@
 !/vercel.json
 !/places.js
 !/journal.js
+!/learning.js
+!/learning-data.json
 !/places-data.json
 !/assets/
 /assets/*

@@ -11,11 +11,14 @@
 !/vercel.json
 !/places.js
 !/journal.js
+!/learning.js
+!/learning-data.json
 !/places-data.json
 !/scripts/
 /scripts/*
 !/scripts/update-places.py
 !/scripts/place-selection.json
+!/scripts/update-learning.py
 !/start.ps1
 !/README.md
 !/assets/
