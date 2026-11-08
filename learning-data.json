@@ -1,13 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "checkedAt": "2026-11-08",
+  "sourceDate": "2026-08-03",
   "sources": [
-    {
-      "name": "서귀포시 평생학습관",
-      "url": "https://edu.seogwipo.go.kr/life/education/course.htm",
-      "coverage": "최신 3페이지 60건에서 관심 주제 분류",
-      "recordsFetched": 60
-    },
     {
       "name": "제주특별자치도교육청 직속기관 평생교육강좌 과목 정보",
       "url": "https://www.data.go.kr/data/15145035/fileData.do",
@@ -16,423 +11,8 @@
       "note": "명확한 아동·교원 대상 제목 26건을 제외하고 중복 행을 합쳤습니다. 성인 수강 가능을 의미하지 않습니다."
     }
   ],
-  "notice": "주제는 제목을 기준으로 앱에서 분류했습니다. 실제 자료와 예시를 구분하며, 신청 가능 여부·자격·총비용은 원문에서 확인해 주세요. 수강료가 무료여도 재료비 등이 별도일 수 있습니다.",
+  "notice": "교육청 직속기관의 과목 목록입니다. 현재 모집 정보가 아니며, 기관·장소·비용·신청 자격은 별도 확인이 필요합니다.",
   "programs": [
-    {
-      "id": "sgp-3461",
-      "title": "드론 스포츠&항공촬영,영상편집/강사명(이태경)",
-      "subjects": [
-        "사진",
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "대강당(1층)",
-      "plan": "매주 목 16:00 ~ 18:00",
-      "weekdays": [
-        "목"
-      ],
-      "startsAt": "2026-10-01T07:00:00+00:00",
-      "endsAt": "2026-11-26T09:00:00+00:00",
-      "applyStartsAt": "2026-09-15T00:00:00+00:00",
-      "applyEndsAt": "2026-09-21T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": "❍ 재 료 비 : 없음\n\r\n❍ 개인 준비물 : 스마트폰, sd카드\n\r\n❍ 교육교재:  프린트물",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍ 드론 스포츠를 활용하여 능숙한 조종기술을 익히고 드론 항공촬영 기술을 숙지하여 실생활에 적용할 수 있는 드론조종 및 항공촬영의 기초 능력을 배양하고 드론영상 AI편집과 간단한 숏폼을 제작할 수 있다.\n\r\n❍ 재 료 비 : 없음\n\r\n❍ 개인 준비물 : 스마트폰, sd카드\n\r\n❍ 교육교재:  프린트물\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS004",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3461",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3461",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3454",
-      "title": "액주름 배자 만들기/강사명(최현주)",
-      "subjects": [
-        "공예"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "봉재실(2층)",
-      "plan": "매주 월·수 13:00 ~ 15:00",
-      "weekdays": [
-        "월",
-        "수"
-      ],
-      "startsAt": "2026-10-07T04:00:00+00:00",
-      "endsAt": "2026-10-28T06:00:00+00:00",
-      "applyStartsAt": "2026-09-15T00:00:00+00:00",
-      "applyEndsAt": "2026-09-23T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 20000,
-      "costNote": "❍ 재 료 비 : 20,000원 (심감 원단, 종이 패턴지 등)\n\r\n❍ 개인 준비물 : 업사이클링 할 한복 일습 1벌\n\r\n (또는 110cm 폭 원단 겉감 2.5마, 안감 2.5마), 원단과 색상에 맞는 재봉실, 자, 재봉 도구 등  * 재봉틀 미사용 수강생 손바느질 가능",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍보관 중인 고품질 한복 원단을 현대적 겉옷으로 업사이클링하며 전통의 가치를 재해석하고, 실생활에 활용 가능한 패션 역랑을 기른다.\n\r\n❍ 재 료 비 : 20,000원 (심감 원단, 종이 패턴지 등)\n\r\n❍ 개인 준비물 : 업사이클링 할 한복 일습 1벌\n\r\n (또는 110cm 폭 원단 겉감 2.5마, 안감 2.5마), 원단과 색상에 맞는 재봉실, 자, 재봉 도구 등  * 재봉틀 미사용 수강생 손바느질 가능              \n\r\n❍ 교육교재: 강사 제작 자료 제공\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3454",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3454",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3453",
-      "title": "(PC/스마트폰)디지털 음악 창작/강사명(김정덕)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 월·목 10:00 ~ 12:00",
-      "weekdays": [
-        "월",
-        "목"
-      ],
-      "startsAt": "2026-10-01T01:00:00+00:00",
-      "endsAt": "2026-11-30T03:00:00+00:00",
-      "applyStartsAt": "2026-09-15T00:00:00+00:00",
-      "applyEndsAt": "2026-09-23T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": "❍ 개인 준비물 : 개인이어폰 권장\n\r\n❍ 교육교재: 단계별 강의자료 및 실습용 음악샘플 제공",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍  음악 이론이나 악기 경험이 없어도 음악프로그램을 활용해 다양한 소리를 직접 만들고 조합하며, 자신만의 음악을 완성·활용한다.\n\r\n❍ 개인 준비물 : 개인이어폰 권장\n\r\n❍ 교육교재: 단계별 강의자료 및 실습용 음악샘플 제공\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS004",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3453",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3453",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3450",
-      "title": "AI 및 디지털교육/강사명(권은아)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 수 13:00 ~ 15:00",
-      "weekdays": [
-        "수"
-      ],
-      "startsAt": "2026-10-07T04:00:00+00:00",
-      "endsAt": "2026-10-28T06:00:00+00:00",
-      "applyStartsAt": "2026-09-15T00:00:00+00:00",
-      "applyEndsAt": "2026-09-21T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": null,
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍ 디지털 기초 교육을 통한 디지털 역량 강화 및 사회 참여 기회 확대\n\r\n❍ 스마트폰, 키오스크 등 디지털 기초 교육\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3450",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3450",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3429",
-      "title": "전통한복/강사명(오미숙)",
-      "subjects": [
-        "공예"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "봉재실(2층)",
-      "plan": "매주 목·토 10:00 ~ 12:00",
-      "weekdays": [
-        "목",
-        "토"
-      ],
-      "startsAt": "2026-10-01T01:00:00+00:00",
-      "endsAt": "2026-11-28T03:00:00+00:00",
-      "applyStartsAt": "2026-09-15T00:00:00+00:00",
-      "applyEndsAt": "2026-09-23T09:00:00+00:00",
-      "tuition": 20000,
-      "materials": 0,
-      "costNote": "❍ 재 료 비 : 개별 준비(옷감)\n\r\n❍ 개인 준비물 : 필기도구, 재봉도구, 제도지 등\n\r\n❍ 교육교재: 개강시 준비",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍ 전통 복식에 대한 이해와 제작 기법을 익힌다.\n\r\n❍ 제작 과정에서 현대적인 생활한복 패턴 및 응용 방법을 익혀 작품을 제작한다.\n\r\n❍ 재 료 비 : 개별 준비(옷감)\n\r\n❍ 개인 준비물 : 필기도구, 재봉도구, 제도지 등\n\r\n❍ 교육교재: 개강시 준비\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS004",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3429",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3429",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3363",
-      "title": "디지털 성인문해교육 '스마트폰 활용(중급)'/강사명(권은아)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 수·목 10:00 ~ 12:00",
-      "weekdays": [
-        "수",
-        "목"
-      ],
-      "startsAt": "2026-09-02T01:00:00+00:00",
-      "endsAt": "2026-09-30T03:00:00+00:00",
-      "applyStartsAt": "2026-08-18T00:00:00+00:00",
-      "applyEndsAt": "2026-08-25T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": "개인 스마트폰, 이어폰(선택), 필기구",
-      "eligibility": "서귀포시민(60세이상, 디지털 정보 취약계층)",
-      "description": "스마트폰 기초·택시 등 생활앱 활용, 키오스크 사용, 현장체험 등",
-      "phone": "064-760-2263",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3363",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3363",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3357",
-      "title": "AI 및 디지털교육/강사명(권은아)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 수 13:00 ~ 15:00",
-      "weekdays": [
-        "수"
-      ],
-      "startsAt": "2026-09-02T04:00:00+00:00",
-      "endsAt": "2026-09-30T06:00:00+00:00",
-      "applyStartsAt": "2026-08-26T00:00:00+00:00",
-      "applyEndsAt": "2026-08-27T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": "없음",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "◦ 디지털 기초 교육을 통한 디지털 역량 강화 및 사회 참여 기회 확대\n\r\n◦ 스마트폰, 키오스크 등 디지털 기초 교육\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3357",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3357",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3347",
-      "title": "나도 글쓰기 작가(주말)/강사명(차영민)",
-      "subjects": [
-        "글쓰기"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "제3강의실(2층)",
-      "plan": "매주 토 10:00 ~ 13:00",
-      "weekdays": [
-        "토"
-      ],
-      "startsAt": "2026-09-05T01:00:00+00:00",
-      "endsAt": "2026-11-28T04:00:00+00:00",
-      "applyStartsAt": "2026-08-18T00:00:00+00:00",
-      "applyEndsAt": "2026-08-25T09:00:00+00:00",
-      "tuition": 30000,
-      "materials": 0,
-      "costNote": "◦ 개인 준비물 : 개인 필기구\n\r\n◦  교육교재: 자체제작\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "◦일상과 경험을 글감으로 발견하고, 에세이·서평·라디오 원고·소설·극본·자서전 등 다양한 글쓰기 형식으로 표현하는 능력을 기른다. 여러 장르의 글쓰기 실습을 통해 자신에게 맞는 표현법을 찾고, 지속적인 글쓰기를 할 수 있는 기반을 마련한다.\n\r\n◦ 개인 준비물 : 개인 필기구\n\r\n◦  교육교재: 자체제작\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS004",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3347",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3347",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3343",
-      "title": "AI와 함께하는 블로그 글쓰기/강사명(김정덕)",
-      "subjects": [
-        "글쓰기",
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 목 14:00 ~ 17:00",
-      "weekdays": [
-        "목"
-      ],
-      "startsAt": "2026-09-03T05:00:00+00:00",
-      "endsAt": "2026-10-29T08:00:00+00:00",
-      "applyStartsAt": "2026-08-18T00:00:00+00:00",
-      "applyEndsAt": "2026-08-25T09:00:00+00:00",
-      "tuition": 20000,
-      "materials": 0,
-      "costNote": "◦개인 준비물 : 스마트폰\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "◦생성형 AI를 활용해 완성도 높은 글을 작성한다.\n\r\n◦검색 노출을 고려한 구성 방법을 익혀 실제 블로그에 적용한다.\n\r\n◦콘텐츠를 기획하고, 지속적으로 운영 가능한 블로그를 구축한다.\n\r\n◦개인 준비물 : 스마트폰\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3343",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3343",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3316",
-      "title": "AI 및 디지털교육/강사명(권은아)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 수 13:00 ~ 15:00",
-      "weekdays": [
-        "수"
-      ],
-      "startsAt": "2026-08-05T04:00:00+00:00",
-      "endsAt": "2026-08-26T06:00:00+00:00",
-      "applyStartsAt": "2026-07-15T00:00:00+00:00",
-      "applyEndsAt": "2026-07-20T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": null,
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "◦ 디지털 기초 교육을 통한 디지털 역량 강화 및 사회 참여 기회 확대\n\r\n◦ 스마트폰, 키오스크 등 디지털 기초 교육\n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3316",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3316",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3313",
-      "title": "합창 지휘법 및 AI 활용을 통한 지도법/강사명(김효강)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "다목적실1 (1층)",
-      "plan": "매주 수,금 14:00 ~ 16:00",
-      "weekdays": [
-        "수",
-        "금"
-      ],
-      "startsAt": "2026-08-05T05:00:00+00:00",
-      "endsAt": "2026-09-30T07:00:00+00:00",
-      "applyStartsAt": "2026-07-27T00:00:00+00:00",
-      "applyEndsAt": "2026-07-29T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 5000,
-      "costNote": "◦ 재 료 비 : 5,000원 (재본비) \n\r\n◦ 개인 준비물 : 악보, 필기도구\n\r\n◦ 교육교재:  유인물",
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "◦ 리더의 음악적 리더쉽 및 교수 역략 강화와 음악 단체의 안정적인 조율 및 장기적 지속 가능성 확대\n\r\n◦ 재 료 비 : 5,000원 (재본비) \n\r\n◦ 개인 준비물 : 악보, 필기도구\n\r\n◦ 교육교재:  유인물  \n\r\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3313",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3313",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
-    {
-      "id": "sgp-3282",
-      "title": "AI 및 디지털교육/강사명(권은아)",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": "서귀포시",
-      "institution": "서귀포시평생학습관",
-      "place": "컴퓨터실(2층)",
-      "plan": "매주 수 13:00 ~ 15:00",
-      "weekdays": [
-        "수"
-      ],
-      "startsAt": "2026-07-01T04:00:00+00:00",
-      "endsAt": "2026-07-29T06:00:00+00:00",
-      "applyStartsAt": "2026-06-15T00:00:00+00:00",
-      "applyEndsAt": "2026-06-18T09:00:00+00:00",
-      "tuition": 0,
-      "materials": 0,
-      "costNote": null,
-      "eligibility": "만19세 이상 서귀포시민",
-      "description": "❍ 디지털 기초 교육을 통한 디지털 역량 강화 및 사회 참여 기회 확대\n\r\n❍ 스마트폰, 키오스크 등 디지털 기초 교육\n\r\n\r\n\n\r\n※ 자세한 내용은 첨부파일(강의계획서)을 확인해주시기 바랍니다.",
-      "phone": "064-760-3872",
-      "sourceState": "COS005",
-      "sourceUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3282",
-      "applicationUrl": "https://edu.seogwipo.go.kr/life/education/course.htm?act=view&course=3282",
-      "checkedAt": "2026-11-08",
-      "source": "서귀포시 평생학습관",
-      "sourceKind": "course",
-      "sample": false,
-      "sourceGroup": "seogwipo",
-      "sourceGroupLabel": "서귀포시 평생학습관 자료",
-      "sourceGroupNote": "첨부 HWP의 서귀포시 평생학습관 API 자료입니다."
-    },
     {
       "id": "edu-f24598f91cf613a25b",
       "title": "영어독서",
@@ -462,10 +42,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-e6f8a204ff04ca8eb9",
@@ -496,10 +73,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-11f4d40f46240f777b",
@@ -530,10 +104,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-624e87e3079a1c3b0e",
@@ -564,10 +135,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-f088e8605821fad210",
@@ -598,10 +166,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-50fc9dd73412988f1f",
@@ -633,10 +198,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-91c6169436c0a0690f",
@@ -667,10 +229,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
+      "sample": false
     },
     {
       "id": "edu-bc9fc35aef5aa2c442",
@@ -702,172 +261,7 @@
       "checkedAt": "2026-11-08",
       "source": "제주특별자치도교육청 직속기관 과목 정보",
       "sourceKind": "catalog",
-      "sample": false,
-      "sourceGroup": "jeju",
-      "sourceGroupLabel": "제주시 평생교육 자료",
-      "sourceGroupNote": "첨부 텍스트에 대한 사용자 지정 자료 구분입니다. 공식 제공기관은 제주특별자치도교육청이며 개별 기관·교육 장소는 확인되지 않았습니다."
-    },
-    {
-      "id": "sample-learning-1",
-      "title": "일상의 한 장면을 에세이로",
-      "subjects": [
-        "글쓰기"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "글쓰기에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
-    },
-    {
-      "id": "sample-learning-2",
-      "title": "책과 나를 잇는 독서",
-      "subjects": [
-        "독서"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "독서에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
-    },
-    {
-      "id": "sample-learning-3",
-      "title": "계절을 읽는 자연관찰",
-      "subjects": [
-        "자연관찰"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "자연관찰에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
-    },
-    {
-      "id": "sample-learning-4",
-      "title": "산책 사진 한 장",
-      "subjects": [
-        "사진"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "사진에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
-    },
-    {
-      "id": "sample-learning-5",
-      "title": "손으로 만드는 작은 공예",
-      "subjects": [
-        "공예"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "공예에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
-    },
-    {
-      "id": "sample-learning-6",
-      "title": "전자책을 위한 디지털 첫걸음",
-      "subjects": [
-        "디지털 활용"
-      ],
-      "region": null,
-      "institution": null,
-      "place": null,
-      "plan": null,
-      "weekdays": [],
-      "startsAt": null,
-      "endsAt": null,
-      "applyStartsAt": null,
-      "applyEndsAt": null,
-      "tuition": null,
-      "materials": null,
-      "eligibility": null,
-      "description": "디지털 활용에 관심 있는 이용자를 위한 화면 체험 예시입니다. 실제 운영 프로그램이 아니며 기관·일정·비용·신청 자격을 제공하지 않습니다.",
-      "phone": null,
-      "sourceUrl": null,
-      "applicationUrl": null,
-      "checkedAt": null,
-      "source": "앱 체험 예시",
-      "sourceKind": "sample",
-      "sample": true
+      "sample": false
     }
   ]
 }
