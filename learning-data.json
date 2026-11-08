@@ -1,6 +1,86 @@
 {
-  "version": 3,
+  "version": 4,
   "checkedAt": "2026-11-08",
+  "courseCategories": [
+    {
+      "id": "rcou-01",
+      "group": "regular",
+      "name": "본원",
+      "path": "/ko/rcou/01"
+    },
+    {
+      "id": "rcou-08",
+      "group": "regular",
+      "name": "동부캠퍼스",
+      "path": "/ko/rcou/08"
+    },
+    {
+      "id": "rcou-03",
+      "group": "regular",
+      "name": "서귀포캠퍼스",
+      "path": "/ko/rcou/03"
+    },
+    {
+      "id": "rcou-04",
+      "group": "regular",
+      "name": "서부캠퍼스",
+      "path": "/ko/rcou/04"
+    },
+    {
+      "id": "rcou-05",
+      "group": "regular",
+      "name": "장년층 생애재설계",
+      "path": "/ko/rcou/05"
+    },
+    {
+      "id": "scou-01",
+      "group": "special",
+      "name": "나도 도민대학강사",
+      "path": "/ko/scou/01"
+    },
+    {
+      "id": "scou-02",
+      "group": "special",
+      "name": "동네캠퍼스",
+      "path": "/ko/scou/02"
+    },
+    {
+      "id": "scou-03",
+      "group": "special",
+      "name": "열린강의실",
+      "path": "/ko/scou/03"
+    },
+    {
+      "id": "scou-04",
+      "group": "special",
+      "name": "특별과정",
+      "path": "/ko/scou/04"
+    },
+    {
+      "id": "scou-05",
+      "group": "special",
+      "name": "메이커 양성",
+      "path": "/ko/scou/05"
+    },
+    {
+      "id": "scou-06",
+      "group": "special",
+      "name": "도민외국어",
+      "path": "/ko/scou/06"
+    },
+    {
+      "id": "scou-07",
+      "group": "special",
+      "name": "장비이용신청",
+      "path": "/ko/scou/07"
+    },
+    {
+      "id": "scou-08",
+      "group": "special",
+      "name": "배움터",
+      "path": "/ko/scou/08"
+    }
+  ],
   "sources": [
     {
       "name": "제주도민대학",
@@ -9,54 +89,67 @@
       "lists": [
         {
           "url": "https://www.jejudomin.kr/ko/rcou/01",
+          "categoryId": "rcou-01",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/rcou/08",
+          "categoryId": "rcou-08",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/rcou/03",
+          "categoryId": "rcou-03",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/rcou/04",
+          "categoryId": "rcou-04",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/rcou/05",
+          "categoryId": "rcou-05",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/01",
+          "categoryId": "scou-01",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/02",
+          "categoryId": "scou-02",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/03",
+          "categoryId": "scou-03",
           "listed": 0
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/04",
+          "categoryId": "scou-04",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/05",
+          "categoryId": "scou-05",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/06",
+          "categoryId": "scou-06",
           "listed": 12
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/07",
+          "categoryId": "scou-07",
           "listed": 0
         },
         {
           "url": "https://www.jejudomin.kr/ko/scou/08",
+          "categoryId": "scou-08",
           "listed": 0
         }
       ]
@@ -90,7 +183,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1651",
@@ -119,7 +215,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1650",
@@ -148,7 +247,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1658",
@@ -177,7 +279,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1657",
@@ -206,7 +311,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1660",
@@ -235,7 +343,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1659",
@@ -264,7 +375,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1661",
@@ -293,7 +407,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1662",
@@ -322,7 +439,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1663",
@@ -351,7 +471,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1664",
@@ -380,7 +503,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1445",
@@ -409,7 +535,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
     },
     {
       "id": "domin-1464",
@@ -438,7 +567,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1294",
@@ -467,7 +599,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1293",
@@ -496,7 +631,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1292",
@@ -525,7 +663,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1027",
@@ -554,7 +695,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1025",
@@ -583,7 +727,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1024",
@@ -612,7 +759,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1023",
@@ -641,7 +791,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1026",
@@ -670,7 +823,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-848",
@@ -699,7 +855,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-847",
@@ -728,7 +887,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-849",
@@ -757,7 +919,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-08"
+      ]
     },
     {
       "id": "domin-1474",
@@ -786,7 +951,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1558",
@@ -815,7 +983,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1466",
@@ -844,7 +1015,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1555",
@@ -873,7 +1047,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1472",
@@ -902,7 +1079,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1473",
@@ -931,7 +1111,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1557",
@@ -960,7 +1143,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1556",
@@ -989,7 +1175,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1471",
@@ -1018,7 +1207,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1465",
@@ -1047,7 +1239,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1470",
@@ -1076,7 +1271,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1475",
@@ -1105,7 +1303,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
     },
     {
       "id": "domin-1483",
@@ -1134,7 +1335,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1482",
@@ -1163,7 +1367,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1486",
@@ -1192,7 +1399,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1481",
@@ -1221,7 +1431,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1479",
@@ -1250,7 +1463,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1478",
@@ -1279,7 +1495,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1477",
@@ -1308,7 +1527,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1485",
@@ -1337,7 +1559,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1476",
@@ -1366,7 +1591,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1487",
@@ -1395,7 +1623,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1480",
@@ -1424,7 +1655,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1484",
@@ -1453,7 +1687,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-04"
+      ]
     },
     {
       "id": "domin-1521",
@@ -1482,7 +1719,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1406",
@@ -1511,7 +1751,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1488",
@@ -1540,7 +1783,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1262",
@@ -1569,7 +1815,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1277",
@@ -1598,7 +1847,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1276",
@@ -1627,7 +1879,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1288",
@@ -1656,7 +1911,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1264",
@@ -1685,7 +1943,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1188",
@@ -1714,7 +1975,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1187",
@@ -1743,7 +2007,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1095",
@@ -1772,7 +2039,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1094",
@@ -1801,7 +2071,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "rcou-05"
+      ]
     },
     {
       "id": "domin-1616",
@@ -1830,7 +2103,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1607",
@@ -1859,7 +2135,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1615",
@@ -1888,7 +2167,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1634",
@@ -1917,7 +2199,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1605",
@@ -1946,7 +2231,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1632",
@@ -1975,7 +2263,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1631",
@@ -2004,7 +2295,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1612",
@@ -2033,7 +2327,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1647",
@@ -2062,7 +2359,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1630",
@@ -2091,7 +2391,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1629",
@@ -2120,7 +2423,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1633",
@@ -2149,7 +2455,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
     },
     {
       "id": "domin-1550",
@@ -2178,7 +2487,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1520",
@@ -2207,7 +2519,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1533",
@@ -2236,7 +2551,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1356",
@@ -2265,7 +2583,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1357",
@@ -2294,7 +2615,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1390",
@@ -2323,7 +2647,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1340",
@@ -2352,7 +2679,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1258",
@@ -2382,7 +2712,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1339",
@@ -2411,7 +2744,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1309",
@@ -2440,7 +2776,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1341",
@@ -2469,7 +2808,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1308",
@@ -2498,7 +2840,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
     },
     {
       "id": "domin-1604",
@@ -2527,7 +2872,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-1589",
@@ -2556,7 +2904,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-1173",
@@ -2585,7 +2936,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-1359",
@@ -2614,7 +2968,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-1123",
@@ -2643,7 +3000,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-988",
@@ -2672,7 +3032,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-978",
@@ -2701,7 +3064,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-947",
@@ -2730,7 +3096,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-944",
@@ -2759,7 +3128,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-945",
@@ -2788,7 +3160,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-786",
@@ -2817,7 +3192,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-785",
@@ -2846,7 +3224,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
     },
     {
       "id": "domin-1656",
@@ -2876,7 +3257,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1655",
@@ -2905,7 +3289,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1654",
@@ -2934,7 +3321,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1653",
@@ -2963,7 +3353,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1599",
@@ -2992,7 +3385,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1598",
@@ -3021,7 +3417,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1597",
@@ -3050,7 +3449,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1596",
@@ -3079,7 +3481,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1595",
@@ -3108,7 +3513,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1603",
@@ -3138,7 +3546,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1602",
@@ -3167,7 +3578,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1594",
@@ -3196,7 +3610,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     },
     {
       "id": "domin-1548",
@@ -3225,7 +3642,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1547",
@@ -3254,7 +3674,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1549",
@@ -3283,7 +3706,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1546",
@@ -3312,7 +3738,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1545",
@@ -3341,7 +3770,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1544",
@@ -3370,7 +3802,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1543",
@@ -3399,7 +3834,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1542",
@@ -3428,7 +3866,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1541",
@@ -3457,7 +3898,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1540",
@@ -3486,7 +3930,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1539",
@@ -3515,7 +3962,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     },
     {
       "id": "domin-1538",
@@ -3544,7 +3994,10 @@
       "checkedAt": "2026-11-08",
       "source": "제주도민대학 공식 강좌 페이지",
       "sourceKind": "domin",
-      "sample": false
+      "sample": false,
+      "categoryIds": [
+        "scou-06"
+      ]
     }
   ]
 }
