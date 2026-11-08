@@ -19,6 +19,7 @@
 !/scripts/update-places.py
 !/scripts/place-selection.json
 !/scripts/update-learning.py
+!/scripts/update-domin.py
 !/start.ps1
 !/README.md
 !/assets/
