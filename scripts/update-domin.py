@@ -23,7 +23,7 @@ CATEGORIES=[
  {'id':'scou-07','group':'special','name':'장비이용신청','path':'/ko/scou/07'},
  {'id':'scou-08','group':'special','name':'배움터','path':'/ko/scou/08'}
 ]
-RULES={'글쓰기':r'글쓰기|에세이|수필|자서전|작가|문예|시쓰기','독서':r'독서|책읽기|서평|북클럽|인문|문학','자연관찰':r'자연|생태|숲|야생화|식물|탐조|환경|정원','사진':r'사진|촬영|포토|이미지','공예':r'공예|도예|도자|목공|가죽|라탄|뜨개|한복|봉제|퀼트|자수|소품|민화|업사이클|수공예','디지털 활용':r'디지털|스마트폰|컴퓨터|영상|인공지능|챗GPT|클로드|캔바|Canva|ChatGPT|\bAI\b|전자책|블로그|엑셀|SNS|메이커|코딩|앱|No.Code'}
+RULES={'글쓰기':r'글쓰기|에세이|수필|자서전|작가|문예|시쓰기','독서':r'독서|책읽기|서평|북클럽|인문|문학','자연관찰':r'자연|생태|숲|야생화|식물|탐조|환경|정원','사진':r'사진|촬영|포토|이미지','공예':r'공예|도예|도자|목공|가죽|라탄|뜨개|한복|봉제|퀼트|자수|소품|민화|업사이클|수공예','디지털 활용':r'디지털|스마트폰|컴퓨터|영상|인공지능|챗GPT|클로드|캔바|Canva|ChatGPT|(?<![A-Za-z])AI(?![A-Za-z])|전자책|블로그|엑셀|SNS|메이커|코딩|앱|No.Code'}
 def clean(value):
     value=re.sub(r'<!--.*?-->|<(script|style)\b[^>]*>.*?</\1>','',value,flags=re.S|re.I)
     return re.sub(r'\s+',' ',html.unescape(re.sub(r'<[^>]+>',' ',value))).strip()
@@ -64,7 +64,8 @@ def build(offline=False):
     checked=datetime.now(KST).date().isoformat();programs=[]
     if offline:
         # Reclassification of cached pages is not a new check of the website.
-        checked=json.loads((ROOT/'learning-data.json').read_text(encoding='utf-8'))['checkedAt']
+        previous=json.loads((ROOT/'learning-data.json').read_text(encoding='utf-8'))
+        checked=previous.get('cacheCheckedAt',previous['checkedAt'])
     for index,(identifier,row) in enumerate(rows.items()):
         fields=parse_detail(fetch(row['path'],cache,offline))
         if not fields:raise ValueError('Unexpected detail fields')
@@ -75,9 +76,27 @@ def build(offline=False):
         programs[-1]['categoryIds']=row['categoryIds']
         if index%10==0:print(f'Checked {index+1}/{len(rows)} public course details.',flush=True)
     return {'version':4,'checkedAt':checked,'courseCategories':CATEGORIES,'sources':[{'name':'제주도민대학','url':BASE,'coverage':'공개 과정 메뉴별 첫 페이지에 노출된 강좌. 과거·현재·예정 기간 제한 없음. 전체 강좌 목록은 공식 홈페이지에서 확인.','lists':coverage}],'programs':programs}
+def merge_archive(previous,current):
+    """Retain older courses and newer manual checks when refreshing a partial list."""
+    rows={p['id']:p for p in previous['programs']}
+    for row in current['programs']:
+        old=rows.get(row['id'])
+        if not old or row['checkedAt']>=max(old.get('checkedAt',''),old.get('listCheckedAt','')):
+            rows[row['id']]={**(old or {}),**row}
+    current['programs']=list(rows.values())
+    current['checkedAt']=max(previous['checkedAt'],current['checkedAt'])
+    current['version']=max(previous.get('version',1),current.get('version',1))
+    if previous.get('refreshSummary'):current['refreshSummary']=previous['refreshSummary']
+    current['sources'][0]['coverage']='일부 공개 목록 확인 자료와 이전 보관 강좌를 합친 목록입니다. 전체 강좌와 최신 접수 상태는 공식 사이트에서 확인해 주세요.'
+    return current
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--from-cache',action='store_true');args=parser.parse_args();snapshot=build(args.from_cache)
-    target=ROOT/'learning-data.json';temp=target.with_suffix('.json.tmp');temp.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temp.replace(target)
+    target=ROOT/'learning-data.json'
+    previous=json.loads(target.read_text(encoding='utf-8')) if target.exists() else None
+    snapshot['cacheCheckedAt']=previous.get('cacheCheckedAt',previous['checkedAt']) if args.from_cache and previous else snapshot['checkedAt']
+    if previous:snapshot=merge_archive(previous,snapshot)
+    temp=target.with_suffix('.json.tmp');temp.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temp.replace(target)
     print(json.dumps({'courses':len(snapshot['programs']),'locations':sum(bool(p['place']) for p in snapshot['programs'])},ensure_ascii=False))
 if __name__=='__main__':
     try:main()

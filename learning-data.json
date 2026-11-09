@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "checkedAt": "2026-11-08",
+  "version": 5,
+  "checkedAt": "2026-11-09",
   "courseCategories": [
     {
       "id": "rcou-01",
@@ -85,7 +85,7 @@
     {
       "name": "제주도민대학",
       "url": "https://www.jejudomin.kr",
-      "coverage": "공개 과정 메뉴별 첫 페이지에 노출된 강좌. 과거·현재·예정 기간 제한 없음. 전체 강좌 목록은 공식 홈페이지에서 확인.",
+      "coverage": "기존 공개 목록과 2026-11-09에 직접 확인한 최신순 첫 페이지를 합친 일부 강좌입니다. 전체 강좌와 최신 접수 상태는 공식 사이트에서 확인해 주세요.",
       "lists": [
         {
           "url": "https://www.jejudomin.kr/ko/rcou/01",
@@ -152,7 +152,8 @@
           "categoryId": "scou-08",
           "listed": 0
         }
-      ]
+      ],
+      "manualReviewDate": "2026-11-09"
     }
   ],
   "programs": [
@@ -186,7 +187,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1651",
@@ -218,7 +220,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1650",
@@ -250,7 +253,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1658",
@@ -282,7 +286,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1657",
@@ -314,7 +319,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1660",
@@ -337,7 +343,7 @@
       "eligibility": "제주도민 12명",
       "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
       "phone": null,
-      "sourceState": "D-4",
+      "sourceState": "대기접수가능",
       "sourceUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1660",
       "applicationUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1660",
       "checkedAt": "2026-11-08",
@@ -346,7 +352,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1659",
@@ -378,13 +385,15 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1661",
       "title": "[본원] 촬영과 AI로 완성하는 제품 이미지(26-2)",
       "subjects": [
-        "사진"
+        "사진",
+        "디지털 활용"
       ],
       "region": "제주시",
       "institution": "제주도민대학",
@@ -401,7 +410,7 @@
       "eligibility": "제주도민 12명",
       "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
       "phone": null,
-      "sourceState": "D-8",
+      "sourceState": "대기접수가능",
       "sourceUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1661",
       "applicationUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1661",
       "checkedAt": "2026-11-08",
@@ -410,7 +419,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1662",
@@ -442,13 +452,14 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1663",
       "title": "[본원] AI로 계획하고 실천하는 2027(26-2)",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": "제주시",
       "institution": "제주도민대학",
@@ -465,7 +476,7 @@
       "eligibility": "제주도민 15명",
       "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
       "phone": null,
-      "sourceState": "D-15",
+      "sourceState": "대기접수가능",
       "sourceUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1663",
       "applicationUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1663",
       "checkedAt": "2026-11-08",
@@ -474,7 +485,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1664",
@@ -506,7 +518,8 @@
       "sample": false,
       "categoryIds": [
         "rcou-01"
-      ]
+      ],
+      "listCheckedAt": "2026-11-09"
     },
     {
       "id": "domin-1445",
@@ -1248,7 +1261,7 @@
       "id": "domin-1470",
       "title": "[서귀포] AI를 이용한 기초 디자인 워크샵 (26-2)",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": "서귀포시",
       "institution": "제주도민대학",
@@ -1408,7 +1421,7 @@
       "id": "domin-1481",
       "title": "[서부] AI를 이용한 기초 디자인 워크샵 (26-2)",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": null,
       "institution": "제주도민대학",
@@ -2240,7 +2253,7 @@
       "id": "domin-1632",
       "title": "[11월 나도제주도민대학강사] AI로 우리 가게 홍보하기 - 인스타그램 게시물 만들고 직접 올리기",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": "제주시",
       "institution": "제주도민대학",
@@ -2753,7 +2766,7 @@
       "id": "domin-1309",
       "title": "[동네캠퍼스] AI시대, 금능리의 삶을 철학에 묻다",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": null,
       "institution": "제주도민대학",
@@ -2849,7 +2862,7 @@
       "id": "domin-1604",
       "title": "[특별] 김상균 교수 특강 'AI와 함께 살아갈 우리, 무엇을 준비해야 하는가'",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": null,
       "institution": "제주도민대학",
@@ -3971,7 +3984,7 @@
       "id": "domin-1538",
       "title": "[도민외국어 3기] AI와 함께 입이 트이는 영어",
       "subjects": [
-        "기타 배움"
+        "디지털 활용"
       ],
       "region": "제주시",
       "institution": "제주도민대학",
@@ -3998,6 +4011,757 @@
       "categoryIds": [
         "scou-06"
       ]
+    },
+    {
+      "id": "domin-1554",
+      "title": "[본원] AI 에이전트로 일 맡기기(26-2)",
+      "subjects": [
+        "디지털 활용"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "본원",
+      "place": "제주도민대학 본원(제주평생교육장학진흥원)",
+      "plan": "2026.10.20(화) ~ 2026.10.27(화)",
+      "weekdays": [],
+      "startsAt": "2026-10-20T16:00:00+09:00",
+      "endsAt": "2026-10-27T18:00:00+09:00",
+      "applyStartsAt": "2026-09-17T09:00:00+09:00",
+      "applyEndsAt": "2026-09-30T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 20명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1554",
+      "applicationUrl": "https://www.jejudomin.kr/ko/rcou/01/view/1554",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "rcou-01"
+      ]
+    },
+    {
+      "id": "domin-1509",
+      "title": "[서귀포] 도전!! 모두의 창업 실전 아카데미(26-2)",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "서귀포캠퍼스",
+      "place": "한라여성새로일하기센터",
+      "plan": "2026.09.03(목) ~ 2026.09.08(화)",
+      "weekdays": [],
+      "startsAt": "2026-09-03T09:30:00+09:00",
+      "endsAt": "2026-09-08T12:30:00+09:00",
+      "applyStartsAt": "2026-08-10T09:00:00+09:00",
+      "applyEndsAt": "2026-09-02T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "창업 준비 중인 여성예비창업자 또는 창업 3년 이내 여성기창업자 15명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/rcou/03/view/1509",
+      "applicationUrl": "https://www.jejudomin.kr/ko/rcou/03/view/1509",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
+    },
+    {
+      "id": "domin-1469",
+      "title": "[서귀포] AI 홍보 콘텐츠 음악 제작 (26-2)",
+      "subjects": [
+        "디지털 활용"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "서귀포캠퍼스",
+      "place": "한라여성새로일하기센터",
+      "plan": "2026.09.02(수) ~ 2026.09.30(수)",
+      "weekdays": [],
+      "startsAt": "2026-09-02T13:30:00+09:00",
+      "endsAt": "2026-09-30T15:30:00+09:00",
+      "applyStartsAt": "2026-08-10T09:00:00+09:00",
+      "applyEndsAt": "2026-08-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 12명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/rcou/03/view/1469",
+      "applicationUrl": "https://www.jejudomin.kr/ko/rcou/03/view/1469",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "rcou-03"
+      ]
+    },
+    {
+      "id": "domin-1649",
+      "title": "[11월 나도제주도민대학강사] 수어, 무대가 되다. (수어 뮤지컬)",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "지혜학당(제주시 조천읍 함덕27길 15)",
+      "plan": "2026.11.03(화) ~ 2026.11.19(목)",
+      "weekdays": [],
+      "startsAt": "2026-11-03T19:00:00+09:00",
+      "endsAt": "2026-11-19T21:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1649",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1649",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1648",
+      "title": "[11월 나도제주도민대학강사] 천아트 기법으로 그리는 제주의 꽃– 제주 식물을 생활소품에 담다",
+      "subjects": [
+        "자연관찰",
+        "공예"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "마음에온 삼도1차, 2층(제주시 충효4길 9)",
+      "plan": "2026.11.09(월) ~ 2026.11.26(목)",
+      "weekdays": [],
+      "startsAt": "2026-11-09T10:00:00+09:00",
+      "endsAt": "2026-11-26T12:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1648",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1648",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1646",
+      "title": "[11월 나도제주도민대학강사] 「제주 음식으로 만나는 한국어: 언어와 문화 교류」",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "만덕빌리지(제주특별자치도 제주시 동대길 29-8(건입동))",
+      "plan": "2026.11.07(토) ~ 2026.11.28(토)",
+      "weekdays": [],
+      "startsAt": "2026-11-07T10:00:00+09:00",
+      "endsAt": "2026-11-28T12:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1646",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1646",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1645",
+      "title": "[11월 나도제주도민대학강사] 편의점 창업의 허와 실",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주평생교육장학진흥원 본원(제주시 서사로 43) 배움실301",
+      "plan": "2026.11.07(토) ~ 2026.12.05(토)",
+      "weekdays": [],
+      "startsAt": "2026-11-07T10:00:00+09:00",
+      "endsAt": "2026-12-05T12:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1645",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1645",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1644",
+      "title": "[11월 나도제주도민대학강사] AI와 만드는 나만의 반응형 웹북 그림책",
+      "subjects": [
+        "디지털 활용"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주평생교육장학진흥원 본원(제주시 서사로 43) 3층 다목적실",
+      "plan": "2026.11.03(화) ~ 2026.11.19(목)",
+      "weekdays": [],
+      "startsAt": "2026-11-03T18:00:00+09:00",
+      "endsAt": "2026-11-19T19:30:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1644",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1644",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1643",
+      "title": "[11월 나도제주도민대학강사] 편안한 쉼과 잠 준비를 위한 이완요가·호흡명상",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "이미숙 힐링요가(제주시 인다3길 15, 201호)",
+      "plan": "2026.11.07(토) ~ 2026.12.05(토)",
+      "weekdays": [],
+      "startsAt": "2026-11-07T10:00:00+09:00",
+      "endsAt": "2026-12-05T11:30:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 13명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1643",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1643",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1642",
+      "title": "[11월 나도제주도민대학강사] AI 통역앱과 함께하는 왕초보 여행영어",
+      "subjects": [
+        "디지털 활용"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주평생교육장학진흥원 본원(제주시 서사로 43) 배움실302",
+      "plan": "2026.11.02(월) ~ 2026.11.18(수)",
+      "weekdays": [],
+      "startsAt": "2026-11-02T10:00:00+09:00",
+      "endsAt": "2026-11-18T11:30:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1642",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1642",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1641",
+      "title": "[11월 나도제주도민대학강사] 몸건강 마음건강 신명나는 고고장구",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주시 구좌읍 하도리 690 게이트볼장",
+      "plan": "2026.11.02(월) ~ 2026.11.18(수)",
+      "weekdays": [],
+      "startsAt": "2026-11-02T19:30:00+09:00",
+      "endsAt": "2026-11-18T21:30:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1641",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1641",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1640",
+      "title": "[11월 나도제주도민대학강사] 스마일 영어교실: 나도 영어로 말할 수 있다!",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주평생교육장학진흥원 본원(제주시 서사로 43) 3층 다목적실",
+      "plan": "2026.11.06(금) ~ 2026.12.04(금)",
+      "weekdays": [],
+      "startsAt": "2026-11-06T10:00:00+09:00",
+      "endsAt": "2026-12-04T12:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1640",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1640",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1639",
+      "title": "[11월 나도제주도민대학강사] 일상생활에서 필요한 소통, 수어잇톡",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": "제주청년센터 7층(제주시 중앙로 53)",
+      "plan": "2026.11.02(월) ~ 2026.11.18(수)",
+      "weekdays": [],
+      "startsAt": "2026-11-02T19:00:00+09:00",
+      "endsAt": "2026-11-18T21:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 12명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1639",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1639",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1638",
+      "title": "[11월 나도제주도민대학강사] 제주어 노래로 배우는 통기타&우쿨렐레 교실",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "나도도민대학강사과정",
+      "place": null,
+      "plan": "2026.11.07(토) ~ 2026.11.28(토)",
+      "weekdays": [],
+      "startsAt": "2026-11-07T10:00:00+09:00",
+      "endsAt": "2026-11-28T12:00:00+09:00",
+      "applyStartsAt": "2026-10-21T14:00:00+09:00",
+      "applyEndsAt": "2026-10-28T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요. 공식 장소 항목에 강좌명이 기재되어 있어 실제 교육 장소는 정보 확인이 필요합니다.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/01/view/1638",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/01/view/1638",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-01"
+      ]
+    },
+    {
+      "id": "domin-1241",
+      "title": "[동네캠퍼스] 우리 마을 기획자 되기",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "하례 수둠모루",
+      "plan": "2026.06.05(금) ~ 2026.09.18(금)",
+      "weekdays": [],
+      "startsAt": "2026-06-05T00:00:00+09:00",
+      "endsAt": "2026-09-18T00:00:00+09:00",
+      "applyStartsAt": "2026-05-20T09:00:00+09:00",
+      "applyEndsAt": "2026-06-01T16:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명(하례마을 및 인근마을 주민 우선 접수)",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1241",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1241",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-1207",
+      "title": "[동네캠퍼스] '제주의 색을 입다' 생활 천연염색 공예교실",
+      "subjects": [
+        "공예"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "서부종합사회복지관 한경센터",
+      "plan": "2026.06.02(화) ~ 2026.07.21(화)",
+      "weekdays": [],
+      "startsAt": "2026-06-02T10:00:00+09:00",
+      "endsAt": "2026-07-21T12:00:00+09:00",
+      "applyStartsAt": "2026-05-14T09:00:00+09:00",
+      "applyEndsAt": "2026-05-21T09:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명(한경면 주민 우선 접수)",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1207",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1207",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-1193",
+      "title": "[동네캠퍼스] 자화상 그리기",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "지혜학당",
+      "plan": "2026.06.05(금) ~ 2026.07.24(금)",
+      "weekdays": [],
+      "startsAt": "2026-06-05T10:30:00+09:00",
+      "endsAt": "2026-07-24T12:30:00+09:00",
+      "applyStartsAt": "2026-05-18T09:00:00+09:00",
+      "applyEndsAt": "2026-05-31T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1193",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1193",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-1191",
+      "title": "[동네캠퍼스]문화로 여는 우리 동네 공감캠퍼스",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "소길돌창고",
+      "plan": "2026.05.16(토) ~ 2026.06.06(토)",
+      "weekdays": [],
+      "startsAt": "2026-05-16T13:00:00+09:00",
+      "endsAt": "2026-06-06T16:00:00+09:00",
+      "applyStartsAt": "2026-05-08T09:00:00+09:00",
+      "applyEndsAt": "2026-05-15T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "초등학생 4학년 이상 제주도민 20명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1191",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1191",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-1186",
+      "title": "[동네캠퍼스] 제주의 숨결",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "청수농촌체험휴양마을 웃뜨르빛센터",
+      "plan": "2026.05.12(화) ~ 2026.07.07(화)",
+      "weekdays": [],
+      "startsAt": "2026-05-12T10:00:00+09:00",
+      "endsAt": "2026-07-07T13:00:00+09:00",
+      "applyStartsAt": "2026-04-30T09:00:00+09:00",
+      "applyEndsAt": "2026-05-10T17:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "40세 이하, 65세 이상 도민(청수리 주민 우선 접수)",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1186",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1186",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-1172",
+      "title": "[동네캠퍼스] 이웃 관계 형성을 위한 공동체 워크숍",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": null,
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "서부종합사회복지관 한경센터",
+      "plan": "2026.04.24(금) 10:00 ~ 12:00",
+      "weekdays": [],
+      "startsAt": "2026-04-24T10:00:00+09:00",
+      "endsAt": "2026-04-24T12:00:00+09:00",
+      "applyStartsAt": null,
+      "applyEndsAt": null,
+      "tuition": null,
+      "materials": null,
+      "eligibility": "지역주민 10명",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요. 목록의 신청 기간 표시가 중복되어 신청 시작·종료 시각은 기재하지 않았습니다. 공식 페이지에서 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/02/view/1172",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/02/view/1172",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-02"
+      ]
+    },
+    {
+      "id": "domin-989",
+      "title": "2025년도 제4기 제주시 주민자치대학",
+      "subjects": [
+        "기타 배움"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "특별과정",
+      "place": "제주시 소통협력센터 5층 다목적홀",
+      "plan": "2025.06.19(목) ~ 2025.09.27(토)",
+      "weekdays": [],
+      "startsAt": "2025-06-19T18:30:00+09:00",
+      "endsAt": "2025-09-27T20:30:00+09:00",
+      "applyStartsAt": "2025-06-02T09:00:00+09:00",
+      "applyEndsAt": "2025-06-13T18:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "주민자치위원, 지역리더, 주민자치에 관심있는 제주시민",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/04/view/989",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/04/view/989",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-04"
+      ]
+    },
+    {
+      "id": "domin-1601",
+      "title": "[10월 상상E-room] (기초) AI & 일러스트 이미지 생성부터 벡터 디자인까지",
+      "subjects": [
+        "사진",
+        "디지털 활용"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "상상E-room",
+      "place": "제주평생교육장학진흥원 2층 디지털 트레이닝실",
+      "plan": "2026.10.19(월) ~ 2026.10.20(화)",
+      "weekdays": [],
+      "startsAt": "2026-10-19T14:00:00+09:00",
+      "endsAt": "2026-10-20T17:00:00+09:00",
+      "applyStartsAt": "2026-09-30T09:00:00+09:00",
+      "applyEndsAt": "2026-10-11T18:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/05/view/1601",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/05/view/1601",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
+    },
+    {
+      "id": "domin-1600",
+      "title": "[10월 상상E-room] (기초) AI 활용 프리미어 영상편집 기초",
+      "subjects": [
+        "디지털 활용"
+      ],
+      "region": "제주시",
+      "institution": "제주도민대학",
+      "campus": "상상E-room",
+      "place": "제주평생교육장학진흥원 2층 디지털 트레이닝실",
+      "plan": "2026.10.14(수) ~ 2026.10.22(목)",
+      "weekdays": [],
+      "startsAt": "2026-10-14T18:30:00+09:00",
+      "endsAt": "2026-10-22T20:30:00+09:00",
+      "applyStartsAt": "2026-09-30T09:00:00+09:00",
+      "applyEndsAt": "2026-10-11T18:00:00+09:00",
+      "tuition": null,
+      "materials": null,
+      "eligibility": "제주도민",
+      "description": "제주도민대학 공개 강좌입니다. 교육 장소·기간·신청 대상은 공식 상세 페이지를 기준으로 표시합니다. 세부 교육 내용과 준비물은 원문을 확인해 주세요.",
+      "phone": null,
+      "sourceState": "기간 마감",
+      "sourceUrl": "https://www.jejudomin.kr/ko/scou/05/view/1600",
+      "applicationUrl": "https://www.jejudomin.kr/ko/scou/05/view/1600",
+      "checkedAt": "2026-11-09",
+      "source": "제주도민대학 공식 강좌 페이지",
+      "sourceKind": "domin",
+      "sample": false,
+      "categoryIds": [
+        "scou-05"
+      ]
     }
-  ]
+  ],
+  "cacheCheckedAt": "2026-11-08",
+  "refreshSummary": {
+    "date": "2026-11-09",
+    "mode": "manual-public-review",
+    "added": 23,
+    "waitingChecked": 11,
+    "waitingChanged": [
+      "domin-1660",
+      "domin-1661",
+      "domin-1663"
+    ],
+    "note": "공식 최신순 공개 목록을 수동 대조하고 기존 앱에 없던 23건의 상세 장소·대상·기간을 확인해 보완했습니다. 새 게시일이 확인된 강좌만을 뜻하지 않으며 기존 과거 강좌도 유지합니다. 확인하지 않은 항목의 날짜는 바꾸지 않았습니다."
+  }
 }
