@@ -24,16 +24,22 @@ assert.equal(expanded.document.sections[1].articles[0].sourceId,'');
 const records=new Map();
 const indexedDB={open(){const request={};setTimeout(()=>{request.result={close(){},createObjectStore(){},transaction(){const tx={};let aborted=false;tx.abort=()=>{aborted=true;setTimeout(()=>tx.onabort?.(),0);};tx.objectStore=()=>({get(key){const result={};setTimeout(()=>{result.result=records.has(key)?structuredClone(records.get(key)):undefined;result.onsuccess?.();setTimeout(()=>{if(!aborted)tx.oncomplete?.();},0);},0);return result;},put(value){records.set(value.scope,structuredClone(value));}});return tx;}};request.onsuccess?.();},0);return request;}};
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
-function controller(){
+function controller(sourceEntries=[]){
   const handlers={},elements=new Map();let renders=0;
-  const document={addEventListener(name,fn){handlers[name]=fn;},querySelector(selector){if(!elements.has(selector))elements.set(selector,{textContent:'',innerHTML:'',classList:{toggle(){}},close(){},focus(){}});return elements.get(selector);}};
+  const document={addEventListener(name,fn){handlers[name]=fn;},querySelector(selector){if(!elements.has(selector))elements.set(selector,{textContent:'',innerHTML:'',classList:{toggle(){}},close(){},showModal(){},focus(){}});return elements.get(selector);}};
   const ctx=context({document,indexedDB});ctx.window.addEventListener=()=>{};
   let user=null,authChanged=()=>{};const remote=new Map(),saved=[];
   ctx.window.jejuBookCloud={configured:()=>false,init(fn){authChanged=fn;},get user(){return user;},async load(id){return remote.get(id)||null;},async save(owner,value){saved.push({owner,book:structuredClone(value)});const result=structuredClone(value);result.revision++;remote.set(owner,result);return result.revision;}};
   vm.runInContext(source['book.js'],ctx);
-  return {api:ctx.window.jejuBook,ctx,elements,saved,remote,get renders(){return renders;},async init(){await this.api.init({getEntries:()=>[],notify(){},onChange(){renders++;}});},input(value){handlers.input({target:{dataset:{bookMeta:'title'},value}});},edit(dataset,value){handlers.input({target:{dataset,value}});},async click(id='',dataset={}){const button={id,dataset,hasAttribute:()=>false};await handlers.click({target:{closest:()=>button}});},switch(id){user=id?{id,email:id+'@example.test'}:null;authChanged(user);}};
+  return {api:ctx.window.jejuBook,ctx,elements,saved,remote,get renders(){return renders;},async init(){await this.api.init({getEntries:()=>sourceEntries,notify(){},onChange(){renders++;}});},input(value){handlers.input({target:{dataset:{bookMeta:'title'},value}});},edit(dataset,value){handlers.input({target:{dataset,value}});},filter(type){document.querySelector('#book-pick-type').value=type;handlers.change({target:{id:'book-pick-type'}});},choose(index){handlers.change({target:{name:'source',value:String(index),checked:true,closest:()=>true}});},async click(id='',dataset={}){const button={id,dataset,hasAttribute:name=>name==='data-book-browse'&&Object.hasOwn(dataset,'bookBrowse')};await handlers.click({target:{closest:()=>button}});},switch(id){user=id?{id,email:id+'@example.test'}:null;authChanged(user);}};
 }
-const first=controller();await first.init();const renderCount=first.renders;first.input('기기에 보관한 책');assert.equal(await first.api.flush(),true);assert.equal(first.renders,renderCount,'Typing must not rebuild the editor');assert.equal(records.get('guest').book.meta.title,'기기에 보관한 책');
+const reading={...original,id:'reading-1',type:'독서',title:'독서 원본',tags:[]},sample={...original,id:'sample',sample:true};
+const first=controller([original,reading,sample]);await first.init();const renderCount=first.renders;first.input('기기에 보관한 책');assert.equal(await first.api.flush(),true);assert.equal(first.renders,renderCount,'Typing must not rebuild the editor');assert.equal(records.get('guest').book.meta.title,'기기에 보관한 책');
+await first.click('',{bookEntry:'reading-1'});assert.match(first.elements.get('#book-pick-count').textContent,/선택 1편/);assert.equal(first.elements.get('#book-picker-dialog').sources.length,2);
+first.filter('산책');first.choose(0);first.filter('독서');assert.match(first.elements.get('#book-pick-count').textContent,/선택 2편/);
+assert.match(first.elements.get('#book-pick-list').innerHTML,/독서 원본/);assert.doesNotMatch(first.elements.get('#book-pick-list').innerHTML,/name="source" value="0"/);
+first.elements.get('#book-pick-target').value=records.get('guest').book.document.sections[1].id;
+await first.click('book-pick-confirm');await first.api.flush();assert.equal(records.get('guest').book.document.sections[1].articles.length,2);assert.equal(reading.title,'독서 원본');
 await first.click('book-add-chapter');await first.click('book-add-chapter');await first.api.flush();
 const targetChapter=records.get('guest').book.document.sections[2].id;
 for(let i=0;i<3;i++)await first.click('',{bookAddArticle:targetChapter});

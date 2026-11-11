@@ -6,7 +6,7 @@
   <meta name="description" content="산책하고 읽고 배우며, 제주에서 내 이름의 책 한 권을 준비하는 공간">
   <title>제주 한 권 — 나를 만나는 사계절</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="styles.css?v=5-book"><script src="places.js" defer></script><script src="photos.js?v=1" defer></script><script src="journal.js?v=4-work" defer></script><script src="learning.js" defer></script><script src="supabase-config.js" defer></script><script src="book-model.js?v=6-sections" defer></script><script src="book-cloud.js" defer></script><script src="book.js?v=6-sections" defer></script><script src="app.js?v=5-book" defer></script>
+  <link rel="stylesheet" href="styles.css?v=7-book-sources"><script src="places.js" defer></script><script src="photos.js?v=1" defer></script><script src="journal.js?v=7-book-sources" defer></script><script src="learning.js" defer></script><script src="supabase-config.js" defer></script><script src="book-model.js?v=6-sections" defer></script><script src="book-cloud.js" defer></script><script src="book.js?v=7-book-sources" defer></script><script src="app.js?v=7-book-sources" defer></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -29,7 +29,7 @@
     <main id="main" tabindex="-1"><div class="loading">첫 페이지를 펼치고 있어요…</div></main>
     <footer>제주 한 권 <span>걷고, 배우고, 쓰는 나의 사계절</span><button id="data-info">데이터 안내</button></footer>
   </div>
-  <dialog id="book-picker-dialog" aria-labelledby="book-pick-title"><button type="button" class="dialog-close" aria-label="글 선택 창 닫기">×</button><h2 id="book-pick-title">내 기록에서 글 고르기</h2><p>선택한 글과 사진을 원고에 복사합니다. 원본 기록은 그대로 남습니다.</p><label for="book-pick-target">넣을 장</label><select id="book-pick-target"></select><div id="book-pick-list"></div><p id="book-pick-error" role="alert"></p><div class="dialog-actions"><button type="button" id="book-pick-cancel" class="outline">취소</button><button type="button" id="book-pick-confirm" class="primary">선택한 글 복사</button></div></dialog>
+  <dialog id="book-picker-dialog" aria-labelledby="book-pick-title"><button type="button" class="dialog-close" aria-label="글 선택 창 닫기">×</button><h2 id="book-pick-title">책에 넣을 내 글 고르기</h2><p>선택한 글과 사진을 원고에 복사합니다. 원본 기록은 그대로 남습니다.</p><label for="book-pick-target">넣을 장</label><select id="book-pick-target"></select><div class="book-pick-filters"><label for="book-pick-type">기록 종류</label><select id="book-pick-type"><option>전체</option><option>산책</option><option>독서</option><option>배움</option><option>일</option><option>일상</option></select><label for="book-pick-query">내 글 검색</label><input id="book-pick-query" type="search" maxlength="200" placeholder="제목, 본문, 장소, 태그"></div><p id="book-pick-count" class="caption" role="status"></p><div id="book-pick-list"></div><p id="book-pick-error" role="alert"></p><div class="dialog-actions"><button type="button" id="book-pick-cancel" class="outline">취소</button><button type="button" id="book-pick-confirm" class="primary">선택한 글 복사</button></div></dialog>
   <dialog id="book-action-dialog" aria-labelledby="book-action-title"><button type="button" class="dialog-close" aria-label="확인 창 닫기">×</button><h2 id="book-action-title">원고 확인</h2><p id="book-action-message"></p><div class="dialog-actions"><button type="button" id="book-action-cancel" class="outline">취소</button><button type="button" id="book-action-confirm" class="primary">계속</button></div></dialog>
   <dialog id="detail-dialog"><button class="dialog-close" aria-label="팝업 닫기">×</button><div id="dialog-content"></div></dialog>
   <dialog id="write-dialog" aria-labelledby="writer-title">
