@@ -50,13 +50,13 @@ create policy jeju_manuscripts_delete_own on public.jeju_book_manuscripts for de
 
 create or replace function public.valid_jeju_book_document(p_document jsonb)
 returns boolean language plpgsql immutable set search_path='' as $$
-declare s jsonb; a jsonb; tag jsonb; ids text[]:='{}'; n integer:=0; total integer:=0; sections integer;
+declare s jsonb; a jsonb; tag jsonb; ids text[]:='{}'; n integer:=0; sections integer;
 begin
   if p_document is null or pg_catalog.octet_length(p_document::text)>20971520
      or pg_catalog.jsonb_typeof(p_document)<>'object' or p_document->'version' is distinct from '1'::jsonb
      or pg_catalog.jsonb_typeof(p_document->'sections') is distinct from 'array' then return false; end if;
   sections:=pg_catalog.jsonb_array_length(p_document->'sections');
-  if sections<3 or sections>102 then return false; end if;
+  if sections<3 then return false; end if;
   for s in select value from pg_catalog.jsonb_array_elements(p_document->'sections') loop
     n:=n+1;
     if pg_catalog.jsonb_typeof(s->'id') is distinct from 'string' or not (s->>'id' ~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
@@ -67,8 +67,7 @@ begin
        or (n>1 and n<sections and s->>'kind' is distinct from 'chapter') then return false; end if;
     ids:=pg_catalog.array_append(ids,s->>'id');
     for a in select value from pg_catalog.jsonb_array_elements(s->'articles') loop
-      total:=total+1;
-      if total>1000 or pg_catalog.jsonb_typeof(a->'id') is distinct from 'string'
+      if pg_catalog.jsonb_typeof(a->'id') is distinct from 'string'
          or not (a->>'id' ~* '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$') or a->>'id'=any(ids)
          or pg_catalog.jsonb_typeof(a->'title') is distinct from 'string' or pg_catalog.char_length(a->>'title')>200
          or pg_catalog.jsonb_typeof(a->'body') is distinct from 'string' or pg_catalog.char_length(a->>'body')>100000

@@ -15,6 +15,10 @@ assert.equal(M.move(book.document.sections,-1,1),false);
 const bad=M.clone(book);bad.document.sections[1].articles[0].photoData='data:image/svg+xml,<svg onload=alert(1)>';assert.throws(()=>M.validate(bad));
 const duplicate=M.clone(book);duplicate.document.sections[1].id=duplicate.document.sections[0].id;assert.throws(()=>M.validate(duplicate));
 const invalid=M.clone(book);invalid.document.sections.reverse();assert.throws(()=>M.validate(invalid));
+const expanded=M.create();for(let i=0;i<105;i++)expanded.document.sections.splice(-1,0,M.chapter());
+for(let i=0;i<1005;i++)expanded.document.sections[1].articles.push(M.article());
+M.validate(expanded);assert.equal(M.stats(expanded).count,1005);
+assert.equal(expanded.document.sections[1].articles[0].sourceId,'');
 
 // Exercise the actual controller against asynchronous transactional storage.
 const records=new Map();
@@ -27,9 +31,16 @@ function controller(){
   let user=null,authChanged=()=>{};const remote=new Map(),saved=[];
   ctx.window.jejuBookCloud={configured:()=>false,init(fn){authChanged=fn;},get user(){return user;},async load(id){return remote.get(id)||null;},async save(owner,value){saved.push({owner,book:structuredClone(value)});const result=structuredClone(value);result.revision++;remote.set(owner,result);return result.revision;}};
   vm.runInContext(source['book.js'],ctx);
-  return {api:ctx.window.jejuBook,ctx,elements,saved,remote,get renders(){return renders;},async init(){await this.api.init({getEntries:()=>[],notify(){},onChange(){renders++;}});},input(value){handlers.input({target:{dataset:{bookMeta:'title'},value}});},switch(id){user=id?{id,email:id+'@example.test'}:null;authChanged(user);}};
+  return {api:ctx.window.jejuBook,ctx,elements,saved,remote,get renders(){return renders;},async init(){await this.api.init({getEntries:()=>[],notify(){},onChange(){renders++;}});},input(value){handlers.input({target:{dataset:{bookMeta:'title'},value}});},edit(dataset,value){handlers.input({target:{dataset,value}});},async click(id='',dataset={}){const button={id,dataset,hasAttribute:()=>false};await handlers.click({target:{closest:()=>button}});},switch(id){user=id?{id,email:id+'@example.test'}:null;authChanged(user);}};
 }
 const first=controller();await first.init();const renderCount=first.renders;first.input('기기에 보관한 책');assert.equal(await first.api.flush(),true);assert.equal(first.renders,renderCount,'Typing must not rebuild the editor');assert.equal(records.get('guest').book.meta.title,'기기에 보관한 책');
+await first.click('book-add-chapter');await first.click('book-add-chapter');await first.api.flush();
+const targetChapter=records.get('guest').book.document.sections[2].id;
+for(let i=0;i<3;i++)await first.click('',{bookAddArticle:targetChapter});
+await first.api.flush();let savedChapter=records.get('guest').book.document.sections[2];assert.equal(savedChapter.articles.length,3);
+const firstArticle=savedChapter.articles[0].id;first.edit({bookField:'title',section:targetChapter,article:firstArticle},'직접 쓴 첫 꼭지');
+await first.click('',{bookMove:'article',section:targetChapter,article:firstArticle,direction:'1'});await first.api.flush();
+savedChapter=records.get('guest').book.document.sections[2];assert.equal(savedChapter.articles[1].title,'직접 쓴 첫 꼭지');assert.equal(records.get('guest').book.document.sections.length,5);
 const second=controller();await second.init();assert.match(second.api.render(),/기기에 보관한 책/);first.input('먼저 저장');await first.api.flush();second.input('덮어쓰면 안 되는 글');assert.equal(await second.api.flush(),false);assert.equal(records.get('guest').book.meta.title,'먼저 저장');assert.match(second.elements.get('#book-save-status').textContent,/다른 창/);
 // Changing accounts must immediately hide the previous user's editor, including on local save failure.
 second.switch('user-a');assert.doesNotMatch(second.api.render(),/덮어쓰면 안 되는 글/);await delay(40);assert.doesNotMatch(second.api.render(),/먼저 저장/);second.input('A의 원고');await second.api.flush();await delay(1500);assert.equal(second.remote.get('user-a').meta.title,'A의 원고');assert.ok(second.saved.every(s=>s.owner==='user-a'));
