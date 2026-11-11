@@ -8,7 +8,7 @@ window.jejuJournal = (() => {
   const photoStatus=document.querySelector('#entry-photo-status');
   let photoBusy=false,photoTask=0,photoWarning='';
   const migrationKey='jeju-one-book.entries.legacy-backup.v1';
-  const types=['산책','독서','배움','일상'];
+  const types=['산책','독서','배움','일','일상'];
   const writer=document.querySelector('#write-dialog');
   const form=document.querySelector('#entry-form');
   const status=document.querySelector('#draft-status');

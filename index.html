@@ -6,7 +6,7 @@
   <meta name="description" content="산책하고 읽고 배우며, 제주에서 내 이름의 책 한 권을 준비하는 공간">
   <title>제주 한 권 — 나를 만나는 사계절</title>
   <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="styles.css"><script src="places.js" defer></script><script src="photos.js?v=1" defer></script><script src="journal.js?v=3-photos" defer></script><script src="learning.js" defer></script><script src="app.js?v=3-photos" defer></script>
+  <link rel="stylesheet" href="styles.css"><script src="places.js" defer></script><script src="photos.js?v=1" defer></script><script src="journal.js?v=4-work" defer></script><script src="learning.js" defer></script><script src="app.js?v=4-work" defer></script>
 </head>
 <body>
   <aside class="sidebar">
@@ -17,6 +17,7 @@
       <a href="#walk" data-page="walk"><span aria-hidden="true">♧</span>산책</a>
       <a href="#reading" data-page="reading"><span aria-hidden="true">▧</span>독서</a>
       <a href="#learn" data-page="learn"><span aria-hidden="true">▤</span>배움</a>
+      <a href="#work" data-page="work"><span aria-hidden="true">◇</span>일</a>
       <a href="#journal" data-page="journal"><span aria-hidden="true">✎</span>내 기록</a>
       <a href="#book" data-page="book"><span aria-hidden="true">▥</span>내 책</a>
     </nav>
@@ -33,7 +34,7 @@
     <button class="dialog-close" aria-label="작성 창 닫기">×</button>
     <p class="eyebrow">MY LITTLE STORY</p><h2 id="writer-title">오늘을 한 페이지로</h2><p class="muted">완벽한 문장이 아니어도 괜찮아요.</p>
     <form id="entry-form">
-      <div class="editor-row"><div><label for="entry-type">기록 종류</label><select name="type" id="entry-type"><option>산책</option><option>독서</option><option>배움</option><option>일상</option></select></div><div><label for="entry-date">날짜</label><input name="date" id="entry-date" type="date" required></div></div>
+      <div class="editor-row"><div><label for="entry-type">기록 종류</label><select name="type" id="entry-type"><option>산책</option><option>독서</option><option>배움</option><option>일</option><option>일상</option></select></div><div><label for="entry-date">날짜</label><input name="date" id="entry-date" type="date" required></div></div>
       <div><label for="entry-title">제목</label><input name="title" id="entry-title" maxlength="100" required placeholder="오늘을 기억할 이름"></div>
       <div><label for="entry-place">장소 <span class="optional">선택</span></label><input name="place" id="entry-place" maxlength="200" placeholder="예: 금산공원, 집 앞 책방"></div>
       <div><label for="entry-body">본문</label><textarea name="body" id="entry-body" rows="8" maxlength="20000" required placeholder="오늘 발견한 작은 것부터 적어보세요."></textarea></div>
