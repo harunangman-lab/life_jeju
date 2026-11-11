@@ -6,6 +6,13 @@
 !/index.html
 !/styles.css
 !/app.js
+!/supabase-config.js
+!/book-model.js
+!/book-cloud.js
+!/book.js
+!/supabase/
+/supabase/*
+!/supabase/books.sql
 !/sample-data.json
 !/build.mjs
 !/vercel.json
@@ -21,6 +28,7 @@
 !/scripts/place-selection.json
 !/scripts/update-learning.py
 !/scripts/update-domin.py
+!/scripts/test-book.mjs
 !/start.ps1
 !/README.md
 !/assets/

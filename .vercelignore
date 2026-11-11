@@ -3,6 +3,10 @@
 !/index.html
 !/styles.css
 !/app.js
+!/supabase-config.js
+!/book-model.js
+!/book-cloud.js
+!/book.js
 !/sample-data.json
 !/build.mjs
 !/vercel.json
